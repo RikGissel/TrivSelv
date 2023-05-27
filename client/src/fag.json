@@ -1,0 +1,19 @@
+[
+    [
+      "Tysk", "Spansk", "Engelsk", "Samfundsfag", "Matematik", "Fransk", "Drama", "Dansk", "Biologi",
+      "Madkundskab", "Historie", "Dansk som andetsprog", "Natur/Teknologi", "Fysik/kemi", "Idræt", "Musik",
+      "Billedkunst", "Kristendomkundskab", "Geografi"
+    ],
+    [
+      "Billedkunst", "Dansk", "Engelsk", "Historie", "Idéhistorie", "Latin", "Mediefag", "Musik", "Oldtidskundskab", "Religion", "Retorik", "Spansk", "Fransk", "Tysk", "Astronomi", "Biologi", "Bioteknologi", "Fysik",
+      "Geografi", "Idræt", "Informatik", "IT", "Kemi", "Matematik", "Naturgeografi", "Programmering",
+      "Afsætning", "Erhvervsjura", "Erhvervsøkonomi", "Finansiering", "Innovation", "International økonomi",
+      "Psykologi", "Samfundsfag", "Virksomhedsøkonomi"
+    ],
+    [
+      "Kost & Motion", "Social Trivsel", "Psykisk Trivsel", "Fysisk Trivsel", "Angst Støtte", "Digital Dannelse",
+      "Støtte Venskab", "Misbrug & Afhængighed", "ADHD/ADD-støtte", "Højt Begavede", "Sorg Støtte",
+      "Seksualvejledning", "Uddannelsesvejledning", "Stress Støtte", "Skolevægring", "Uddannelsesparathed & Info"
+    ]
+  ]
+  
