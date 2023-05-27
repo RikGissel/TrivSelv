@@ -19,7 +19,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 
   body{
@@ -94,8 +93,10 @@
 
   @media (max-width: 768px) {
 
-    .banner {
 
+
+    .banner {
+    overflow-x: hidden; 
         display: flex;
         justify-content: center;
         align-items: center;
