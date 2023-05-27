@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import Content from './components/content';
 import Footer from './components/Footer.js';
 import reportWebVitals from './reportWebVitals';
 import ContentSwitcher from './components/PopupMap';
@@ -10,8 +11,27 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Nav />
+    <Content 
+    className={"first-content-section"}
+    imageSrc={process.env.PUBLIC_URL + '/content-1.jpg'}
+    header={"Alle kan noget særligt"}
+    text1={"Vi tilbyder ikke kun undervisning og faglig støtte, men også trivselsstøtte, der fokuserer på den personlige udvikling af hvert enkelt barn og ung. Vi faciliterer desuden spændende undervisningsdage til skoler og foreninger, som bliver varetaget af vores fantastiske BOOSTERE."}
+    text2={"Som BOOSTER hos TrivSelv får du muligheden for at udfolde dig inden for det, du er bedst til. Dette sikrer, at vi kan tilbyde kvalitet og nærvær i en bred vifte af muligheder, hvor du kan vælge at arbejde med undervisning i grundskole- og gymnasiefag, personlig og social trivsel eller en kombination af begge. Der er mange muligheder, hvis du brænder ligesom os for at gøre en forskel for andre."}
+    text3={"Vi er skabt for at gøre en uvurderlig forskel. Derfor søger vi engagerede og passionerede BOOSTERE, der ønsker at inspirere andre og gøre en betydelig forskel i livet for dem, der har brug for vores hjælp. Lad os sammen skabe en positiv forandring i verden."}
+    btnText={"Fagområder"}
+    />
+    <Content 
+    className={"second-content-section"}
+    imageSrc={process.env.PUBLIC_URL + '/content-2.jpg'}
+    header={"For os er trivsel alt - også din!"}
+    text1={"Vi skaber trivsel hos børn & unge gennem en holistisk og anerkendende tilgang i hele vores virke. Vi tror på, at din trivsel er lige så betydningsfuld som det, du gør for andre. Vi forstår os på, hvor vigtigt din tid er. Derfor tilbyder vi høj grad af fleksibilitet og sparring, mens du gør det, du er bedst til – og samtidig styrker din egen faglighed."}
+    text2={"Vi er nysgerrig på dig og sætter pris på dine kompetencer. Vi tilbyder dig som BOOSTER, muligheden for at styrke din egen personlige udvikling mens vi i fællesskab gør en værdifuld forskel for børn og unge. At være en del af TrivSelv betyder at være en del af noget større."}
+    text3={"For os er det ikke et krav, at du har undervisningserfaring. Du skal dog være fyldt 18 år, være i gang med – eller have færdiggjort din ungdomsuddannelse samt kunne fremvise ren Straffe- og Børneattest."}
+    btnText={"Skriv til os"}
+    secondButtonClass="apply-button"
+    />
     <App />
-    <Footer />
+     <Footer />
     <ContentSwitcher/>
   </React.StrictMode>
 );
