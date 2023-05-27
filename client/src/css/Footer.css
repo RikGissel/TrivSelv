@@ -39,3 +39,11 @@ footer hr {
 .footer-aps{
   font-weight: 900;
 }
+
+@media (max-width: 768px) {
+
+  footer hr {
+    width: 95%;
+  }
+
+}

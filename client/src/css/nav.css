@@ -19,6 +19,8 @@
   font-size: 0.9vw;
   min-height: 100px;
   height: 100px;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-logo img {
