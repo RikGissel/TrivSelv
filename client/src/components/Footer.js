@@ -5,6 +5,7 @@ function Footer() {
   return (
     
     <footer>
+      <div className='Footer-wrapper'>
       <img src={logo} alt="Triv selv logo" />
         <ul>
           <li className='footer-aps'>Trivselv ApS</li>
@@ -12,6 +13,7 @@ function Footer() {
           <li>booster@trivselv.dk</li>
           <li>CVR. 00000000</li>
         </ul>
+      </div>
       <hr className='footer-line'></hr>
     </footer>
 

@@ -48,13 +48,18 @@
   margin-left: 30px;
   cursor: pointer;
   padding-top: 10px;
+  font-weight: 400;
+}
+
+.navbar-menu li:hover{
+color: #a11091;
 }
 
 .navbar-contact {
   position: relative;
   background-color: #a11091;
   color: white;
-  height: 45px;
+  height: 40px;
   border-radius: 10px 10px;
   width: 20%;
   display: flex;
