@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "../css/nav.css";
 import logo from "../assets/logo/TrivSelv_logo_navbar.svg";
 import arrowIcon from "../assets/icons/arrow-down.png";
+import hamburger from "../assets/icons/bars-solid.svg";
 
 
 function Nav() {
+
 
   return (
     <nav className="navbar" style={{ minHeight: "90px" }}>
@@ -12,8 +14,18 @@ function Nav() {
         <img src={logo} alt="Triv selv logo" />
       </div>
       <div className="navbar-toggle">
-        <ul className="nav-mobile-menu">
+        <img className="hamburger-menu" src={hamburger} alt="hamburger menu" />
+        <ul className="hamburger-mobile-list">
           <li>Booster</li>
+          <li>Fag</li>
+          <li>Om os</li>
+          <li className="navbar-contact">
+            Kontakt
+            <img className="arrow" src={arrowIcon} alt="Arrow" />
+            <div className="contact-dropdown">
+              <a href="mailto:contact@example.com">booster@trivselv.dk</a>
+            </div>
+          </li>
         </ul>
         </div>
       <div className={`navbar-menu`}>
@@ -29,7 +41,7 @@ function Nav() {
             </div>
           </li>
         </ul>
-      </div>
+        </div>
     </nav>
   );
 }
