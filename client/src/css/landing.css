@@ -28,13 +28,15 @@
     align-items: center;
     flex-direction: row-reverse;
     height: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
   }
   
   .landing-image {
     height: 100vh;
     width: 100vw;
-    object-fit: cover;
+    background-image: url(../assets/images/land-img.jpg);
+    background-size: cover;
+    background-position: center;
   }
   
   .landing-content {
@@ -43,30 +45,33 @@
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    width: 50vw;
+    width: 100vw;
     background-color: var(--main-purple-color);
-    height: 50vh;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
   }
   
   .landing-header {
     font-size: 40px;
-    margin-bottom: 10px;
     width: 90%;
     text-align: left;
     line-height: 1.2em;
     font-family: var(--font-inter);
     font-weight: 800;
     color: var(--main-white-color);
+    margin-bottom: 0;
   }
   
   .landing-paragraph {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
     text-align: left;
     width: 90%;
     font-family: var(--font-Montserrat);
     color: var(--main-white-color);
     opacity: 0.7;
+    margin-bottom: 0;
+
   }
   
   .landing-button {
@@ -80,11 +85,16 @@
     border-radius: var(--button-border-radius);
     align-self: flex-start;
     margin-left: 20%;
-
-    
+    font-weight: 700;
   }
+
+  .landing-paragraph{
+      padding-top: 15px;
+      padding-bottom: 30px;
+  }
+
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
 
 
     .landing-wrapper {
@@ -100,36 +110,24 @@
   .landing-button{
     margin-left: 5%;
   }
+
+  .landing-header{
+    margin: auto;
+  }
+  .landing-paragraph{
+    margin: auto;
+  }
       
 }
   
-    .landing-content {
-      width: 100%;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .landing-image {
-      height: 50vh;
-      object-fit: cover;
-    }
-
-    .landing-paragraph{
-        padding-top: 15px;
-        padding-bottom: 30px;
-    }
-
-
-    
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
         .landing-wrapper {
           height: auto;
-
+          width: 100vw;
         }
       
         .landing-image {
           height: 70vh;
-          object-fit: cover;
         }
 
         .landing-content{
@@ -137,6 +135,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 1rem;
         }
 
         .landing-header{
@@ -148,6 +147,8 @@
 
         .landing-paragraph{
             width: 60%;
+
+
         }
       }
   
