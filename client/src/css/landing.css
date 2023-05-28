@@ -128,12 +128,12 @@
         }
       
         .landing-image {
-          height: 70vh;
+          height: 60vh;
           object-fit: cover;
         }
 
         .landing-content{
-            height: 70vh;
+            height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;
