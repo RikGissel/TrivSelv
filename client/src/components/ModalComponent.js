@@ -84,6 +84,7 @@ const ModalComponent = ({ closeModal }) => {
         </p>
 
         {/* Input fields */}
+        <div className='modal-input-container'>
         <input type="text" name="navn" value={formData.navn} onChange={handleInputChange} placeholder="Navn" className='input-short' />
         <input type="text" name="adresse" value={formData.adresse} onChange={handleInputChange} placeholder="Adresse" className='input-short' />
         <input type="text" name="mobilnummer" value={formData.mobilnummer} onChange={handleInputChange} placeholder="Mobilnummer" className='input-short'/>
@@ -91,7 +92,7 @@ const ModalComponent = ({ closeModal }) => {
         <input type="text" name="fodselstag" value={formData.fodselstag} onChange={handleInputChange} placeholder="Fødselsdag" className='input-short'/>
         <textarea name="uddannelse" value={formData.uddannelse} onChange={handleInputChange} placeholder="Hvilken uddannelse har du gennemført?" className="input-long"/>
         <textarea name="studie" value={formData.studie} onChange={handleInputChange} placeholder="Hvad studerer du og på hvilket semester? (Kun hvis relevant)" className="input-long" />
-
+        </div>
         {/* Check buttons */}
         <div className="check-group">
           <h3>Grundskole</h3>
