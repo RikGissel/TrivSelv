@@ -14,18 +14,21 @@ const Landing = ({ landIMG, landHeader, landText }) => {
   };
 
   return (
+    <section>
     <div className="landing-wrapper">
-      <img src={landIMG} alt="Landing Image" className="landing-image" />
-      <div className="landing-content">
-        <h1 className="landing-header">{landHeader}</h1>
-        <p className="landing-paragraph">{landText}</p>
-        <button className="landing-button" onClick={openModal}>
-          Ansøg nu
-        </button>
-      </div>
+        <div className="landing-image"></div>
+        {/* <img src={landIMG} alt="Landing Image" className="landing-image" /> */}
+        <div className="landing-content">
+          <h1 className="landing-header">{landHeader}</h1>
+          <p className="landing-paragraph">{landText}</p>
+          <button className="landing-button" onClick={openModal}>
+            Ansøg nu
+          </button>
+        </div>
 
-      {isModalOpen && <ModalComponent closeModal={closeModal} />}
-    </div>
+        {isModalOpen && <ModalComponent closeModal={closeModal} />}
+      </div>
+    </section>
   );
 };
 

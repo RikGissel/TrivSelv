@@ -64,59 +64,80 @@
   .modal-input-container{
     display: flex;
     flex-direction: column;
-    width: 80%;
-  }
-
-
-  .modal-content input[type="text"],
-  .modal-content input[type="file"],
-  .modal-content label {
     width: 90%;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-    outline: none;
-    color: #ccc;
-
   }
-
-  input.input-short {
-    height: 50px;
-    max-height: 90px;
-    margin: 20px;
-    padding-left: 10px;
+/* Input field styles */
+.modal-content textarea,
+.modal-content input[type="text"],
+.modal-content input[type="file"],
+.modal-content label {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  outline: none;
+  color: #ccc;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 15px;
+  width: 100%;
 }
-  input.input-long {
-    width: 80%;
-    height: 250px;
-    margin: 20px;
-    padding-left: 10px;
-    resize: vertical;
-}
-  
 
+input.input-short {
+  height: 50px;
+  max-height: 120px;
+  margin: 20px;
+  padding: 10px;
+}
+
+textarea.input-long {
+  min-height: 120px;
+  height: 120px;
+  resize: vertical;
+  height: 50px;
+  margin: 20px;
+  padding: 10px;
+  width: 90%;
+}
+
+.modal-content textarea:focus,
 .modal-content input[type="text"]:focus,
 .modal-content input[type="file"]:focus {
   outline: none;
   border: 1px solid #ccc;
 }
 
+.modal-content textarea::placeholder,
+.modal-content input[type="text"]::placeholder,
+.modal-content input[type="file"]::placeholder,
+.modal-content label {
+  text-align: left;
+}
 
-  .modal-content input[type="text"]::placeholder,
-  .modal-content input[type="file"]::placeholder,
-  .modal-content label {
-    text-align: left;
-  }
+.modal-content input.input-long::placeholder {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-size: 15px;
+  color: #ccc;
+  transform: translateY(-50%);
+}
 
-  .modal-content input.input-long::placeholder {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    font-size: 15px;
-    color: #ccc;
-    transform: translateY(-50%);
-  }
-  
+.modal-content textarea.input-long {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  line-height: 1.2em;
+}
+
+.modal-content textarea.input-long::placeholder {
+  top: -5px;
+}
+
+.modal-content textarea.input-long {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
   
   .close-button {
     position: relative;

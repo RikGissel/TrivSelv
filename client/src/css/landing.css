@@ -33,8 +33,10 @@
   
   .landing-image {
     height: 100vh;
-    width: 100vw;
-    object-fit: cover;
+    width: 50vw;
+    background-image: url(../assets/images/land-img.jpg);
+    background-size: cover;
+    background-position: center;
   }
   
   .landing-content {
@@ -80,9 +82,13 @@
     border-radius: var(--button-border-radius);
     align-self: flex-start;
     margin-left: 20%;
-
-    
   }
+
+  .landing-paragraph{
+      padding-top: 15px;
+      padding-bottom: 30px;
+  }
+
   
   @media (max-width: 1024px) {
 
@@ -103,32 +109,14 @@
       
 }
   
-    .landing-content {
-      width: 100%;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .landing-image {
-      height: 50vh;
-      object-fit: cover;
-    }
-
-    .landing-paragraph{
-        padding-top: 15px;
-        padding-bottom: 30px;
-    }
-
-
-    
     @media (min-width: 1025px) {
         .landing-wrapper {
           height: auto;
-
         }
       
         .landing-image {
           height: 70vh;
+          width: 50vw;
           object-fit: cover;
         }
 
@@ -137,6 +125,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 1rem;
         }
 
         .landing-header{
