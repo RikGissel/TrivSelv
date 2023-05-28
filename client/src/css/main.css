@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* collection of mixins */
 .lessons-container {
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -19,6 +20,7 @@
   color: #7b5ec6;
 }
 .lessons-container .lessons-wrapper .lessons-subheading {
+  color: #888888;
   margin-bottom: 15px;
 }
 .lessons-container .lessons-wrapper button {

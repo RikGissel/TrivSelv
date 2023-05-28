@@ -51,6 +51,7 @@ root.render(
 
     <ContentSwitcher/>
 
+    <Banner type="text" text1="”… en vision om at alle børn får den hjælp og støtte, de har brug for, til at kunne realisere deres fulde potentiale”" text2="- TrivSelv" /> 
 
 <Content 
     className={"first-content-section"}
@@ -62,7 +63,6 @@ root.render(
     btnText={"Fagområder"}
   />
 
-   <Banner type="text" text1="”… en vision om at alle børn får den hjælp og støtte, de har brug for, til at kunne realisere deres fulde potentiale”" text2="- TrivSelv" /> 
 
    <Content 
     className={"second-content-section"}

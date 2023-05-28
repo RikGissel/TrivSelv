@@ -6,6 +6,7 @@
 @import "helpers/mixins";
 
 .lessons-container {
+  padding: 50px 0;
   @include flex-center-horizontal;
   
   width: 100vw;
@@ -20,6 +21,7 @@
     }
 
     .lessons-subheading {
+      color: #888888;
       margin-bottom: 15px;
     }
 
