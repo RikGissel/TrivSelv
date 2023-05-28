@@ -10,7 +10,7 @@
     --main-white-color: #fff;
     --font-inter: 'Inter', sans-serif;
     --font-Montserrat: 'Montserrat', sans-serif;
-    --font-Alexandria: 'Alexandria', sans-serif;;
+    --font-Alexandria: 'Alexandria', sans-serif;
     --default-border-radius: 15px 15px;
     --button-border-radius: 10px 10px;
   }
@@ -23,6 +23,7 @@
 
   body{
     margin: 0;
+    overflow-x: hidden;
   }
 
 .banner {

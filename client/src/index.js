@@ -47,7 +47,10 @@ root.render(
   <Banner
      type="images" images={[process.env.PUBLIC_URL + '/banner-1.jpg', process.env.PUBLIC_URL + '/banner-2.jpg', process.env.PUBLIC_URL + '/banner-3.jpg']} 
      texts={['Et job med mening - og ikke bare for dig selv', 'Styrk din faglighed mens du gør en forskel', 'Tilrettelæg din egen arbejdstid - til en konkurrencedygtig løn']}
-     /> 
+     />
+
+    <ContentSwitcher/>
+
 
 <Content 
     className={"first-content-section"}
@@ -76,7 +79,6 @@ root.render(
   
   <Footer />
 
-    <ContentSwitcher/>
   </React.StrictMode>
 );
 
