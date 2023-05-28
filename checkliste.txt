@@ -7,7 +7,7 @@ Billede i midten på banner med billede er fucked ift de andre
 content sections for høje det kan evt fikses ved dynamisk classname ligesom på div'en undervisning
 
 PRIOTERINGSLISTE:
-Ansøninig modal??
+Ansøgning modal??
 Navbar
 ContentSection
 Tjekke småfejl
