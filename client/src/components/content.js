@@ -8,7 +8,9 @@ const Content = ({ imageSrc, header, text1, text2, text3, className,btnText, sec
     return (
       <div className='content-wrapper'>
         <div className={containerClassName}>
-          <img src={imageSrc} alt="Image" className="content-image" />
+
+            <img src={imageSrc} alt="Image" className="content-image" />
+
           <div className="content-text-box">
             <h3>{header}</h3>
             <p className='content-paragraph-text'>{text1}</p>
