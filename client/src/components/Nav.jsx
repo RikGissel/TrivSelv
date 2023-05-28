@@ -6,12 +6,16 @@ import arrowIcon from "../assets/icons/arrow-down.png";
 
 function Nav() {
 
-
   return (
     <nav className="navbar" style={{ minHeight: "90px" }}>
       <div className="navbar-logo">
         <img src={logo} alt="Triv selv logo" />
       </div>
+      <div className="navbar-toggle">
+        <ul className="nav-mobile-menu">
+          <li>Booster</li>
+        </ul>
+        </div>
       <div className={`navbar-menu`}>
         <ul>
           <li>Booster</li>

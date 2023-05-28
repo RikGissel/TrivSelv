@@ -53,16 +53,6 @@ root.render(
 
     <Banner type="text" text1="”… en vision om at alle børn får den hjælp og støtte, de har brug for, til at kunne realisere deres fulde potentiale”" text2="- TrivSelv" /> 
 
-<Content 
-    className={"first-content-section"}
-    imageSrc={process.env.PUBLIC_URL + '/content-1.jpg'}
-    header={"Alle kan noget særligt"}
-    text1={"Vi tilbyder ikke kun undervisning og faglig støtte, men også trivselsstøtte, der fokuserer på den personlige udvikling af hvert enkelt barn og ung. Vi faciliterer desuden spændende undervisningsdage til skoler og foreninger, som bliver varetaget af vores fantastiske BOOSTERE."}
-    text2={"Som BOOSTER hos TrivSelv får du muligheden for at udfolde dig inden for det, du er bedst til. Dette sikrer, at vi kan tilbyde kvalitet og nærvær i en bred vifte af muligheder, hvor du kan vælge at arbejde med undervisning i grundskole- og gymnasiefag, personlig og social trivsel eller en kombination af begge. Der er mange muligheder, hvis du brænder ligesom os for at gøre en forskel for andre."}
-    text3={"Vi er skabt for at gøre en uvurderlig forskel. Derfor søger vi engagerede og passionerede BOOSTERE, der ønsker at inspirere andre og gøre en betydelig forskel i livet for dem, der har brug for vores hjælp. Lad os sammen skabe en positiv forandring i verden."}
-    btnText={"Fagområder"}
-  />
-
 
    <Content 
     className={"second-content-section"}

@@ -56,7 +56,7 @@
   font-weight: 400;
 }
 
-.navbar-menu li:hover{
+.navbar-menu li:hover:not(.navbar-contact){
 color: #a11091;
 }
 
