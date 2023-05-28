@@ -127,7 +127,8 @@
         }
       
         .landing-image {
-          height: 70vh;
+          height: 60vh;
+          width: 50vw;
         }
 
         .landing-content{
@@ -135,7 +136,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1rem;
+            width: 50vw;
+
         }
 
         .landing-header{
