@@ -19,11 +19,14 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+    z-index: 999;
+    padding-top: 5rem;
 }
   
   .modal-content {
@@ -32,12 +35,15 @@
     padding: 20px;
     border-radius: 5px;
   }
+
   
   .modal h2{
     color: var(--main-purple-color );
     font-family: var(--font-Montserrat);
     font-weight: 700;
     text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
   }
 
   .modal p{
@@ -45,33 +51,66 @@
     font-family: var(--font-Montserrat);
     font-weight: 400;
     text-align: left;
-    width: 80%;
-  }
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+  } 
 
 
   /* Input field styles */
   .modal-content input[type="text"],
   .modal-content input[type="file"],
   .modal-content label {
-    width: 100%;
-    padding: 25px;
+    width: 90%;
     border: none;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    outline: none;
+    color: #ccc;
+
   }
+
+  input.input-short {
+    height: 50px;
+    max-height: 90px;
+    margin: 20px;
+    padding-left: 10px;
+}
+  input.input-long {
+    height: 120px;
+    margin: 20px;
+    padding-left: 10px;
+    resize: vertical;
+}
   
 
-  
+.modal-content input[type="text"]:focus,
+.modal-content input[type="file"]:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
 
   .modal-content input[type="text"]::placeholder,
   .modal-content input[type="file"]::placeholder,
   .modal-content label {
     text-align: left;
   }
+
+  .modal-content input.input-long::placeholder {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 15px;
+    color: #ccc;
+    transform: translateY(-50%);
+  }
+  
   
   .close-button {
     position: relative;
     top: 10px;
-    left: 90%;
+    left: 95%;
     font-size: 18px;
     padding: 5px;
     background: none;

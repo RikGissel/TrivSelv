@@ -73,23 +73,24 @@ const ModalComponent = ({ closeModal }) => {
   return (
     <div className="modal">
       <div className="modal-content" ref={modalRef}>
+        <div className='modal-wrapper'>
         <button className="close-button" onClick={closeModal}>
           <img src={process.env.PUBLIC_URL + '/x-icon.svg'}></img>
         </button>
         <h2>Ansøg som BOOSTER</h2>
         <p>
           Udfyld formularen herunder. Du kan vælge at undervise i flere fag og trivsels-emner, blot du lige checker om du
-          har kvalifikationerne til
+          har kvalifikationerne til det.  
         </p>
 
         {/* Input fields */}
-        <input type="text" name="navn" value={formData.navn} onChange={handleInputChange} placeholder="Navn" className='input-test' />
-        <input type="text" name="adresse" value={formData.adresse} onChange={handleInputChange} placeholder="Adresse" />
-        <input type="text" name="mobilnummer" value={formData.mobilnummer} onChange={handleInputChange} placeholder="Mobilnummer"/>
-        <input type="text" name="email" value={formData.email} onChange={handleInputChange} placeholder="Email" />
-        <input type="text" name="fodselstag" value={formData.fodselstag} onChange={handleInputChange} placeholder="Fødselsdag"/>
-        <input type="text" name="uddannelse" value={formData.uddannelse} onChange={handleInputChange} placeholder="Hvilken ddannelse har du gennemført?" />
-        <input type="text" name="studie" value={formData.studie} onChange={handleInputChange} placeholder="Hvad studerer du og på hvilket semester? (Kun hvis relevant)" />
+        <input type="text" name="navn" value={formData.navn} onChange={handleInputChange} placeholder="Navn" className='input-short' />
+        <input type="text" name="adresse" value={formData.adresse} onChange={handleInputChange} placeholder="Adresse" className='input-short' />
+        <input type="text" name="mobilnummer" value={formData.mobilnummer} onChange={handleInputChange} placeholder="Mobilnummer" className='input-short'/>
+        <input type="text" name="email" value={formData.email} onChange={handleInputChange} placeholder="Email" className='input-short' />
+        <input type="text" name="fodselstag" value={formData.fodselstag} onChange={handleInputChange} placeholder="Fødselsdag" className='input-short'/>
+        <textarea name="uddannelse" value={formData.uddannelse} onChange={handleInputChange} placeholder="Hvilken uddannelse har du gennemført?" className="input-long"/>
+        <textarea name="studie" value={formData.studie} onChange={handleInputChange} placeholder="Hvad studerer du og på hvilket semester? (Kun hvis relevant)" className="input-long" />
 
         {/* Check buttons */}
         <div className="check-group">
@@ -100,7 +101,7 @@ const ModalComponent = ({ closeModal }) => {
           <h3>Trivsel</h3>
           {/* Add check buttons for Trivsel */}
         </div>
-        {/* Rest of the modal content */}
+        
         {/* Upload image button */}
         <input type="file" onChange={handleFileChange} />
         {/* Consent checkbox */}
@@ -113,8 +114,8 @@ const ModalComponent = ({ closeModal }) => {
           />
           I agree to the terms and conditions
         </label>
-        {/* Submit button */}
-        <button onClick={handleSubmit}>Insend</button>
+          <button onClick={handleSubmit}>Insend</button>
+        </div>
       </div>
     </div>
   );
