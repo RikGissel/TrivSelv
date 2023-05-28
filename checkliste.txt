@@ -1,0 +1,14 @@
+Ting der mangler:
+
+Finde en bedre måde at holde billeder 
+Lave Navbar færdig
+Tjekke små fejl 
+Billede i midten på banner med billede er fucked ift de andre 
+content sections for høje det kan evt fikses ved dynamisk classname ligesom på div'en undervisning
+
+PRIOTERINGSLISTE:
+Ansøgning modal??
+Navbar
+ContentSection
+Tjekke småfejl
+Billede i banner

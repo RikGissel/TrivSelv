@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-purple-color: #7B5EC6;
+    --main-pink-color: #A11091;
+    --main-text-color: #888888;
+    --main-hover-color: #BB13A9;
+    --main-white-color: #fff;
+    --font-inter: 'Inter', sans-serif;
+    --font-Montserrat: 'Montserrat', sans-serif;
+    --font-Alexandria: 'Alexandria', sans-serif;;
+    --default-border-radius: 15px 15px;
+    --button-border-radius: 10px 10px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    margin: 0;
+  }
+
+.banner {
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-purple-color);
+  }
+
+  .banner-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+  }
+  
+  
+  .banner-with-text {
+    height: 65vh;
+    background-color: #7B5EC6;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .banner-image {
+    width: 330px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: var(--default-border-radius);
+  }
+
+  .banner-image-text{
+    width: 325px;
+    color: var(--main-white-color);
+    font-family: var(--font-inter);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .banner-text-head{
+    color: #FFFFFF;
+    font-family: "Alexandria", Sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 50px;
+    width: 55%;
+    margin: auto;
+  }
+  
+
+  .banner-text-author{
+    font-family: "Alexandria", Sans-serif;
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 768px) {
+
+
+
+    .banner {
+    overflow-x: hidden; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main-purple-color);
+        padding-top: 3rem;
+      }
+
+    .banner-with-images{
+        min-height: 140vh;
+        height: 100%;
+
+    }
+    .banner-images {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      padding-right: 2%;
+
+    }
+
+    .banner-image-container{
+        padding-bottom: 2rem;
+
+    }
+  
+    .banner-image {
+        width: 100%;
+        max-width: 95vw;
+        
+    }
+
+    .banner-image-text{
+        margin: auto;
+    }
+
+    .banner-with-text {
+        height: 72vh;
+        min-height: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    .banner-text-head{
+        width: 90%;
+    }
+
+  }
+  
+  
