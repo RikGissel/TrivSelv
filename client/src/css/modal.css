@@ -16,25 +16,24 @@
 /* Modal styles */
 .modal {
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100vw;
-    height: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    
+    overflow-y: scroll;
     z-index: 999;
+    padding-top: 5rem;
 }
   
   .modal-content {
     background-color: #fff;
     width: 100%;
-    max-height: 100vh;
     padding: 20px;
     border-radius: 5px;
-    overflow-y: auto;
   }
 
   
@@ -155,16 +154,5 @@ textarea.input-long {
   .close-button img{
     width: 20px;
     height: 20px;
-  }
-
-  .check-group{
-    display: flex;
-    flex-direction: column;
-    border: none;
-  }
-
-  .check-group label{
-    border: none;
-    padding-right: 10px;
   }
 
