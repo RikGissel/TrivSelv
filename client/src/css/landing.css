@@ -21,19 +21,19 @@
     box-sizing: border-box;
   }
 
+  .filler {
+    height: 100px;
+  }
+
 
 .landing-wrapper {
 
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
-    height: 100%;
-    min-height: 90vh;
+    min-height: 75vh;
   }
   
   .landing-image {
-    height: 100vh;
-    width: 100vw;
     background-image: url(../assets/images/land-img.jpg);
     background-size: cover;
     background-position: center;
@@ -98,13 +98,19 @@
 
 
     .landing-wrapper {
-    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+  }
 
+  .landing-image {
+    min-height: 400px;
+    width: 100%;
+  }
+
+  .landing-content {
+    min-height: 370px;
   }
   
   .landing-button{
@@ -122,17 +128,15 @@
   
     @media (min-width: 1025px) {
         .landing-wrapper {
-          height: auto;
+          height: 100%;
           width: 100vw;
         }
       
         .landing-image {
-          height: 60vh;
           width: 50vw;
         }
 
         .landing-content{
-            height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;

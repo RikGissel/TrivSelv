@@ -15,6 +15,7 @@ const Landing = ({ landIMG, landHeader, landText }) => {
 
   return (
     <section>
+    <div className="filler"></div>
     <div className="landing-wrapper">
         <div className="landing-image"></div>
         {/* <img src={landIMG} alt="Landing Image" className="landing-image" /> */}
