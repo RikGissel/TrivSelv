@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 
 /* Components */
-import Content from './components/content';
-import Footer from './components/Footer.js';
-import Banner from './components/banner';
 import Nav from './components/Nav';
+import Landing from './components/landing';
+import Content from './components/content';
+import Banner from './components/banner';
+import Footer from './components/Footer.js';
 
 import reportWebVitals from './reportWebVitals';
 import ContentSwitcher from './components/PopupMap';
@@ -15,6 +16,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <Nav />
+
+  <Landing 
+    landIMG={process.env.PUBLIC_URL + '/land-img.jpg'}
+    landHeader={"Vil du gøre en meningsfuld forskel for børn & unge?"}
+    landText={"Din indsats vil være med til at skabe forskel og mening for børn & unge, nu og i fremtiden. En forskel, der gør vores arbejde meningsfuldt. Hos TrivSelv bliver du en del af et større fællesskab. Et fællesskab med et fælles mål – trivsel!"}
+    />
 
   <Content 
     className={"first-content-section"}
