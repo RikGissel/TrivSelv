@@ -19,14 +19,12 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    overflow-y: scroll;
     z-index: 999;
-    padding-top: 5rem;
 }
   
   .modal-content {
@@ -34,6 +32,8 @@
     width: 100%;
     padding: 20px;
     border-radius: 5px;
+    max-height: 100vh;
+    overflow: auto;
   }
 
   
@@ -154,5 +154,17 @@ textarea.input-long {
   .close-button img{
     width: 20px;
     height: 20px;
+  }
+
+
+  .check-group{
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .check-group label{
+    border: none;
+    padding-right: 10px;
   }
 
