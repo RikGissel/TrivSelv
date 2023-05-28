@@ -57,7 +57,17 @@
   } 
 
 
+
+
   /* Input field styles */
+
+  .modal-input-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+
   .modal-content input[type="text"],
   .modal-content input[type="file"],
   .modal-content label {
@@ -77,7 +87,8 @@
     padding-left: 10px;
 }
   input.input-long {
-    height: 120px;
+    width: 80%;
+    height: 250px;
     margin: 20px;
     padding-left: 10px;
     resize: vertical;
