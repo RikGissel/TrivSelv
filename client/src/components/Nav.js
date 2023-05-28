@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../css/nav.css";
 import logo from "../assets/logo/TrivSelv_logo_navbar.svg";
 import arrowIcon from "../assets/icons/arrow-down.png";
-/* import hamburger from "../assets/icons/bars-solid.svg"; */
+import hamburger from "../assets/icons/bars-solid.svg";
 
 
 function Nav() {
@@ -14,8 +14,8 @@ function Nav() {
         <img src={logo} alt="Triv selv logo" />
       </div>
       <div className="navbar-toggle">
-{/*         <img className="hamburger-menu" src={hamburger} alt="hamburger menu" />
- */}        <ul className="hamburger-mobile-list">
+        <img className="hamburger-menu" src={hamburger} alt="hamburger menu" />
+        <ul className="hamburger-mobile-list">
           <li>Booster</li>
           <li>Fag</li>
           <li>Om os</li>
