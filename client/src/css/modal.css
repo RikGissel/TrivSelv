@@ -216,7 +216,7 @@ textarea.input-long {
 
   .modal-button-container{
     margin-top: 1.5rem;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -234,5 +234,10 @@ textarea.input-long {
     align-self: flex-start;
     margin-left: 20%;
     font-weight: 700;
+  }
 
+  .modal .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
   }

@@ -12,3 +12,21 @@ Navbar
 ContentSection
 Tjekke småfejl
 Billede i banner
+
+
+
+########################## TO DO LISTE ################################
+
+1:Lave Nav færdig -> RIK
+
+2:Lave Ansøg koblet med API -> Daniel
+
+3:Lave Ansøg til flere screens ->
+
+4: Lave animationer til Ansøg + Fagvælger -> Rik
+
+5: Sikre at Alle knapper linker til rigtige ting ( ansøg knapper åbner modal osv) -> Begge
+
+6: 
+
+EVT: Sørge for at man ikke kan scrolle på siden når modal åben
