@@ -4,9 +4,12 @@ import logo from "../assets/logo/TrivSelv_logo_navbar.svg";
 import arrowIcon from "../assets/icons/arrow-down.png";
 import hamburger from "../assets/icons/bars-solid.svg";
 
-
 function Nav() {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleMobileMenuToggle = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <nav className="navbar" style={{ minHeight: "90px" }}>
@@ -14,8 +17,17 @@ function Nav() {
         <img src={logo} alt="Triv selv logo" />
       </div>
       <div className="navbar-toggle">
-        <img className="hamburger-menu" src={hamburger} alt="hamburger menu" />
-        <ul className="hamburger-mobile-list">
+        <img
+          className="hamburger-menu"
+          src={hamburger}
+          alt="hamburger menu"
+          onClick={handleMobileMenuToggle}
+        />
+        <ul
+          className={`hamburger-mobile-list ${
+            isMobileMenuOpen ? "open" : ""
+          }`}
+        >
           <li>Booster</li>
           <li>Fag</li>
           <li>Om os</li>
@@ -27,7 +39,7 @@ function Nav() {
             </div>
           </li>
         </ul>
-        </div>
+      </div>
       <div className={`navbar-menu`}>
         <ul>
           <li>Booster</li>
@@ -41,7 +53,7 @@ function Nav() {
             </div>
           </li>
         </ul>
-        </div>
+      </div>
     </nav>
   );
 }

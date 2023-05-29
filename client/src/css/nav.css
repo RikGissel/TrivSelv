@@ -113,6 +113,11 @@ color: #a11091;
 
 
 @media (max-width: 768px) {
+
+  .navbar-contact {
+    width: 50%;
+  }
+
   .navbar-logo img {
     height: 40px;
   }
@@ -126,9 +131,43 @@ color: #a11091;
   .navbar-toggle {
     display: block;
   }
-
+  
   .hamburger-mobile-list {
     display: none;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    left: 0;
+    top: 15%;
+    padding: 25px 0;
+  }
+
+  .hamburger-mobile-list.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: hamburgerFade 0.5s ease-in-out;
+  }
+
+  @keyframes hamburgerFade {
+    from {
+      opacity: 0;
+      transform: translateY(-15%);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .hamburger-mobile-list img {
+    width: 15px;
+  }
+
+  .hamburger-mobile-list li {
+    list-style: none;
+    font-size: 20px;
+    margin: 15px 0;
   }
 
   .navbar-menu.open ul {
