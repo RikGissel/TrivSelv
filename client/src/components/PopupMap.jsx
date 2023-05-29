@@ -713,6 +713,7 @@ const ContentSwitcher = () => {
           {selectedLanguage === 'Kost & Motion' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Kost & Motion</h2>
                   <br />
@@ -722,6 +723,7 @@ const ContentSwitcher = () => {
                   Ba i relevant uddannelsesretning<br/>
 Eks. Idræt, Fysioterapi, Ergoterapi, Medicin, Sygepleje, ernæring & Sundhed m.v.</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -730,6 +732,7 @@ Eks. Idræt, Fysioterapi, Ergoterapi, Medicin, Sygepleje, ernæring & Sundhed m.
           {selectedLanguage === 'Social Trivsel' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Social Trivsel</h2>
                   <br />
@@ -739,6 +742,7 @@ Eks. Idræt, Fysioterapi, Ergoterapi, Medicin, Sygepleje, ernæring & Sundhed m.
                   Ba i relevant uddannelsesretning<br/>
 Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -747,6 +751,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
 {selectedLanguage === 'Psykisk Trivsel' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Psykisk Trivsel</h2>
                   <br />
@@ -756,6 +761,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
                   Ba i relevant uddannelsesretning<br/>
 Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -764,6 +770,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
 {selectedLanguage === 'Fysisk Trivsel' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Fysisk Trivsel</h2>
                   <br />
@@ -773,6 +780,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
                   Ba i relevant uddannelsesretning<br/>
 Eks. Idræt, Fysioterapi, Ergoterapi, Medicin, Sygepleje m.v.</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -781,6 +789,7 @@ Eks. Idræt, Fysioterapi, Ergoterapi, Medicin, Sygepleje m.v.</p>
 {selectedLanguage === 'Håndtering af angst' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Håndtering af angst</h2>
                   <br />
@@ -790,6 +799,7 @@ Eks. Idræt, Fysioterapi, Ergoterapi, Medicin, Sygepleje m.v.</p>
                   Ba i relevant uddannelsesretning<br/>
 Eks. Psykologi, Pædagogik m.v. Psykoterapeut eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -798,6 +808,7 @@ Eks. Psykologi, Pædagogik m.v. Psykoterapeut eller anden relevant baggrund</p>
 {selectedLanguage === 'Digital Dannelse' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Digital Dannelse</h2>
                   <br />
@@ -806,6 +817,7 @@ Eks. Psykologi, Pædagogik m.v. Psykoterapeut eller anden relevant baggrund</p>
                   <p className="popup-txt" style={{ marginBottom: '20px' }}>
                   4. semester gennemført på fagrelevant uddannelse</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -814,6 +826,7 @@ Eks. Psykologi, Pædagogik m.v. Psykoterapeut eller anden relevant baggrund</p>
 {selectedLanguage === 'Hjælp til venskaber' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Hjælp til venskaber</h2>
                   <br />
@@ -823,6 +836,7 @@ Eks. Psykologi, Pædagogik m.v. Psykoterapeut eller anden relevant baggrund</p>
                   Ba i relevant uddannelsesretning<br/>
 Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -831,6 +845,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
 {selectedLanguage === 'Misbrug og afhængighed' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Misbrug og afhængighed</h2>
                   <br />
@@ -840,6 +855,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
                   Ba i relevant uddannelsesretning<br/>
 Eks. Misbrugskonsulent, Psykologi, Socialrådgiver, Psykoterapeut eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -848,6 +864,7 @@ Eks. Misbrugskonsulent, Psykologi, Socialrådgiver, Psykoterapeut eller anden re
 {selectedLanguage === 'Hjælp til ADHD og ADD' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Hjælp til ADHD og ADD</h2>
                   <br />
@@ -857,6 +874,7 @@ Eks. Misbrugskonsulent, Psykologi, Socialrådgiver, Psykoterapeut eller anden re
                   Ba i relevant uddannelsesretning<br/>
 Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -865,6 +883,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
 {selectedLanguage === 'Støtte til højt begavede' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Støtte til højt begavede</h2>
                   <br />
@@ -877,6 +896,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Læreruddannelse, Psykoterapeu
                   Evt. særlige krav:
                   <p className="popup-txt">Kræver indgående kendskab til HB</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -885,6 +905,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Læreruddannelse, Psykoterapeu
 {selectedLanguage === 'Søvnudfordringer' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Søvnudfordringer</h2>
                   <br />
@@ -894,6 +915,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Læreruddannelse, Psykoterapeu
                   Ba i relevant uddannelsesretning<br/>
 Eks. Psykologi, medicin, fysioterapi eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -902,6 +924,7 @@ Eks. Psykologi, medicin, fysioterapi eller anden relevant baggrund</p>
 {selectedLanguage === 'Seksualundervisning' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Seksualundervisning</h2>
                   <br />
@@ -911,6 +934,7 @@ Eks. Psykologi, medicin, fysioterapi eller anden relevant baggrund</p>
                   4. semester gennemført på fagrelevant uddannelse<br/>
 Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse med seksualvejledning, Psykoterapeut, Fysioterapeut, Sygepleje eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -919,6 +943,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
 {selectedLanguage === 'Uddannelsesvejledning' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Uddannelsesvejledning</h2>
                   <br />
@@ -928,6 +953,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
                   4. semester gennemført på fagrelevant uddannelse<br/>
 Eks. Uddannelsesvidenskab, Socialrådgiver, Læreruddannelse m.v.</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -936,6 +962,7 @@ Eks. Uddannelsesvidenskab, Socialrådgiver, Læreruddannelse m.v.</p>
 {selectedLanguage === 'Stresshåndtering' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Stresshåndtering</h2>
                   <br />
@@ -944,6 +971,7 @@ Eks. Uddannelsesvidenskab, Socialrådgiver, Læreruddannelse m.v.</p>
                   <p className="popup-txt" style={{ marginBottom: '20px' }}>
                   4. semester gennemført på fagrelevant uddannelse, Psykologi, Medicin, Psykoterapeut eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -952,6 +980,7 @@ Eks. Uddannelsesvidenskab, Socialrådgiver, Læreruddannelse m.v.</p>
 {selectedLanguage === 'Skolevægring' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Skolevægring</h2>
                   <br />
@@ -961,6 +990,7 @@ Eks. Uddannelsesvidenskab, Socialrådgiver, Læreruddannelse m.v.</p>
                   Ba i relevant uddannelsesretning<br/>
 Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund</p>
                 </>
+                </div>
               }
               onClose={handleClosePopup}
             />
@@ -969,6 +999,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
 {selectedLanguage === 'Uddannelsesparathed' && activeSection === 'section3' && (
             <Popup
               content={
+                <div id='trivselv-popup'>
                 <>
                   <h2 style={{ transform: 'translateY(25%)' }}>Uddannelsesparathed</h2>
                   <br />
@@ -978,6 +1009,7 @@ Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddanne
                   Ba i relevant uddannelsesretning<br/>
 Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund</p>
                 </>
+              </div>
               }
               onClose={handleClosePopup}
             />

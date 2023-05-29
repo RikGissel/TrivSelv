@@ -146,6 +146,16 @@ color: #fff;
 line-height: 1.2em;
 }
 
+#trivselv-popup {
+  color: #a11091;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 85%;
+  }
+}
+
 @-webkit-keyframes fade-in-up {
   from {
     opacity: 0;
