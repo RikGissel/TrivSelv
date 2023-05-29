@@ -129,7 +129,7 @@ const Modal = () => {
             </label>
 
             {/* Submit button */}
-            <button onClick={handleSubmit}>Insend</button>
+            <button onClick={handleSubmit}>Indsend</button>
 
             <button onClick={closeModal}>Close</button>
           </div>
