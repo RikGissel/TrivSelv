@@ -65,6 +65,8 @@
     display: flex;
     flex-direction: column;
     width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
   }
 /* Input field styles */
 .modal-content textarea,
@@ -85,8 +87,7 @@
 input.input-short {
   height: 50px;
   max-height: 120px;
-  margin: 20px;
-  padding: 10px;
+
 }
 
 textarea.input-long {
@@ -94,9 +95,6 @@ textarea.input-long {
   height: 120px;
   resize: vertical;
   height: 50px;
-  margin: 20px;
-  padding: 10px;
-  width: 90%;
 }
 
 .modal-content textarea:focus,
@@ -161,10 +159,85 @@ textarea.input-long {
     display: flex;
     flex-direction: column;
     border: none;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .check-group h3{
+    font-size: 14px;
+    color: var(--main-text-color);
+    padding-bottom: 10px;
+    font-weight: 400;
   }
 
   .check-group label{
     border: none;
-    padding-right: 10px;
+    font-size: 14px;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
   }
 
+  .labelTxt{
+    margin-left: 2.5px;
+  }
+
+  .file-group{
+    margin-bottom: 2rem;
+    width: 90%;
+    margin: auto;
+
+  }
+
+  .file-group h3{
+      font-size: 14px;
+      color: var(--main-text-color);
+      padding-bottom: 5px;
+  }
+
+  .modal-content input[type="file"]{
+    border: none;
+  }
+
+  .consent-group{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .consent-group label{
+    border: none;
+    padding-right: 5px;
+  }
+
+  .consent-text{
+    display: inline;
+  }
+
+  .modal-button-container{
+    margin-top: 1.5rem;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .modal-button {
+    background-color: var(--main-pink-color);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: var(--font-inter);
+    border-radius: var(--button-border-radius);
+    align-self: flex-start;
+    margin-left: 20%;
+    font-weight: 700;
+  }
+
+  .modal .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
