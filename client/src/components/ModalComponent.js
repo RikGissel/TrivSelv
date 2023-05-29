@@ -179,7 +179,7 @@ const ModalComponent = ({ closeModal }) => {
         </div>
         
         {/* Upload image button */}
-        <input type="file" onChange={handleFileChange} multiple />
+        <input type="file" onChange={handleFileChange} />
         {/* Consent checkbox */}
         <label>
           <input
@@ -190,7 +190,7 @@ const ModalComponent = ({ closeModal }) => {
           />
           I agree to the terms and conditions
         </label>
-          <button onClick={handleSubmit}>Indsend</button>
+          <button onClick={handleSubmit}>Insend</button>
         </div>
       </div>
     </div>
