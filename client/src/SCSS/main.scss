@@ -10,6 +10,7 @@
   @include flex-center-horizontal;
   
   width: 100vw;
+  
    & .lessons-wrapper {
     width: 80%;
     @include flex-column;
@@ -33,6 +34,8 @@
       font-weight: 500;
       transition: all 0.3s ease-in-out;
     }
+    .lessons-main__wrapper {
+      width: 100%;
     .lessons__btn-1,
 .lessons__btn-2 {
 color: #7b5ec6;
@@ -116,12 +119,6 @@ color: #fff;
     width: 100%;
     margin-top: 20px;
   }
-
-  #lessons-btn-wrapper__1,
-  #lessons-btn-wrapper__2,
-  #lessons-btn-wrapper__3 {
-    width: 80vw;
-  }
 }
 
 .popup {
@@ -146,6 +143,7 @@ color: #fff;
           box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.05);
 -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.05);
 -moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.05);
+line-height: 1.2em;
 }
 
 @-webkit-keyframes fade-in-up {
@@ -181,4 +179,32 @@ color: #fff;
 .popup-txt {
   font-weight: 500;
   font-size: 16px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Opacity of 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure the overlay appears above other content */
+}
+}
+
+.lesson-section__3 > .popup {
+  color: red !important;
 }

@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   width: 100vw;
-  /* Styling for the content sections */
 }
 .lessons-container .lessons-wrapper {
   width: 80%;
@@ -15,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* Styling for the content sections */
 }
 .lessons-container .lessons-wrapper .lessons-heading {
   color: #7b5ec6;
@@ -31,38 +31,41 @@
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
-.lessons-container .lessons-wrapper .lessons__btn-1,
-.lessons-container .lessons-wrapper .lessons__btn-2 {
+.lessons-container .lessons-wrapper .lessons-main__wrapper {
+  width: 100%;
+}
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-1,
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-2 {
   color: #7b5ec6;
   border: 2px solid #7b5ec6;
   background-color: #fff;
 }
-.lessons-container .lessons-wrapper .lessons__btn-1:hover, .lessons-container .lessons-wrapper .lessons__btn-1:focus:hover,
-.lessons-container .lessons-wrapper .lessons__btn-2:hover,
-.lessons-container .lessons-wrapper .lessons__btn-2:focus:hover {
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-1:hover, .lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-1:focus:hover,
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-2:hover,
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-2:focus:hover {
   background-color: #8a5bef;
   color: #fff;
 }
-.lessons-container .lessons-wrapper .lessons__btn-1:focus,
-.lessons-container .lessons-wrapper .lessons__btn-2:focus {
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-1:focus,
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-2:focus {
   background-color: #7b5ec6;
   color: #fff;
 }
-.lessons-container .lessons-wrapper .lessons__btn-3 {
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-3 {
   color: #a11091;
   border: 2px solid #a11091;
   background-color: #fff;
 }
-.lessons-container .lessons-wrapper .lessons__btn-3:hover, .lessons-container .lessons-wrapper .lessons__btn-3:focus:hover {
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-3:hover, .lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-3:focus:hover {
   background-color: #BB13A9;
   color: #fff;
 }
-.lessons-container .lessons-wrapper .lessons__btn-3:focus {
+.lessons-container .lessons-wrapper .lessons-main__wrapper .lessons__btn-3:focus {
   background-color: #a11091;
   color: #fff;
 }
-.lessons-container .box-1,
-.lessons-container .box-2 {
+.lessons-container .lessons-wrapper .box-1,
+.lessons-container .lessons-wrapper .box-2 {
   color: #7b5ec6;
   font-weight: 600;
   background: rgba(127, 17, 224, 0.15);
@@ -75,11 +78,11 @@
   text-overflow: ellipsis;
   transition: all 0.5s ease-in-out;
 }
-.lessons-container .box-1:hover,
-.lessons-container .box-2:hover {
+.lessons-container .lessons-wrapper .box-1:hover,
+.lessons-container .lessons-wrapper .box-2:hover {
   transform: translateY(-10%);
 }
-.lessons-container .box-3 {
+.lessons-container .lessons-wrapper .box-3 {
   color: #a11091;
   font-weight: 600;
   background: rgba(161, 16, 145, 0.15);
@@ -92,25 +95,19 @@
   text-overflow: ellipsis;
   transition: all 0.5s ease-in-out;
 }
-.lessons-container .box-3:hover {
+.lessons-container .lessons-wrapper .box-3:hover {
   transform: translateY(-10%);
 }
-.lessons-container .lesson-section__1,
-.lessons-container .lesson-section__2,
-.lessons-container .lesson-section__3 {
+.lessons-container .lessons-wrapper .lesson-section__1,
+.lessons-container .lessons-wrapper .lesson-section__2,
+.lessons-container .lessons-wrapper .lesson-section__3 {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   width: 100%;
   margin-top: 20px;
 }
-.lessons-container #lessons-btn-wrapper__1,
-.lessons-container #lessons-btn-wrapper__2,
-.lessons-container #lessons-btn-wrapper__3 {
-  width: 80vw;
-}
-
-.popup {
+.lessons-container .popup {
   text-align: center;
   position: fixed;
   top: 50%;
@@ -132,8 +129,8 @@
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.05);
+  line-height: 1.2em;
 }
-
 @-webkit-keyframes fade-in-up {
   from {
     opacity: 0;
@@ -158,11 +155,35 @@
     transform: translate(-50%, -50%);
   }
 }
-.popup-content {
+.lessons-container .popup-content {
   text-align: center;
 }
-
-.popup-txt {
+.lessons-container .popup-txt {
   font-weight: 500;
   font-size: 16px;
+}
+.lessons-container .popup-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+}
+.lessons-container .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Opacity of 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure the overlay appears above other content */
+}
+
+.lesson-section__3 > .popup {
+  color: red !important;
 }/*# sourceMappingURL=main.css.map */
