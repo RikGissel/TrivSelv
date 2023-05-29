@@ -134,12 +134,12 @@ color: #a11091;
   
   .hamburger-mobile-list {
     display: none;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: auto;
     background-color: white;
     left: 0;
-    top: 15%;
+    transform: translateY(10%);
     padding: 25px 0;
   }
 
