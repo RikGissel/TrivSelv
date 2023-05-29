@@ -23,8 +23,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #FFFFFFAB;
     z-index: 999;
+    color: var(--main-text-color );
+
 }
   
   .modal-content {
@@ -53,7 +55,9 @@
     text-align: left;
     width: 90%;
     margin: auto;
-    font-size: 15px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    
   } 
 
 
@@ -68,16 +72,16 @@
     margin: auto;
     margin-bottom: 2rem;
   }
-/* Input field styles */
+
 .modal-content textarea,
 .modal-content input[type="text"],
 .modal-content input[type="file"],
 .modal-content label {
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #C2C2C2;
   margin-bottom: 20px;
   outline: none;
-  color: #ccc;
+  color: #C2C2C2;
   font-family: var(--font-inter);
   font-weight: 400;
   font-size: 15px;
@@ -101,7 +105,7 @@ textarea.input-long {
 .modal-content input[type="text"]:focus,
 .modal-content input[type="file"]:focus {
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid #C2C2C2;
 }
 
 .modal-content textarea::placeholder,
@@ -109,26 +113,29 @@ textarea.input-long {
 .modal-content input[type="file"]::placeholder,
 .modal-content label {
   text-align: left;
+  color: var(--main-text-color); 
+  font-size: 15px;
+  font-family: var(--font-Montserrat);
 }
 
-.modal-content input.input-long::placeholder {
+.modal-content textarea::placeholder {
   position: absolute;
-  top: 15px;
-  left: 10px;
+  top: 0;
+  left: 0;
   font-size: 15px;
-  color: #ccc;
-  transform: translateY(-50%);
+  color: var(--main-text-color);
+  transform: translateY(15%);
 }
 
 .modal-content textarea.input-long {
-  padding-top: 25px;
+  padding-top: 5px;
+  padding-left: 2px;
   padding-bottom: 5px;
   line-height: 1.2em;
 }
 
-.modal-content textarea.input-long::placeholder {
-  top: -5px;
-}
+
+
 
 .modal-content textarea.input-long {
   display: block;
@@ -164,7 +171,7 @@ textarea.input-long {
     margin-bottom: 2rem;
   }
 
-  .check-group h3{
+  .check-group h4{
     font-size: 14px;
     color: var(--main-text-color);
     padding-bottom: 10px;
@@ -189,7 +196,7 @@ textarea.input-long {
 
   }
 
-  .file-group h3{
+  .file-group h4{
       font-size: 14px;
       color: var(--main-text-color);
       padding-bottom: 5px;
@@ -240,4 +247,52 @@ textarea.input-long {
     color: red;
     font-size: 14px;
     margin-top: 5px;
+
+  }
+
+  @media (min-width: 1043px) {
+
+    .check-group-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+    }
+    
+    .check-group {
+      width: 50%; 
+    }
+
+    .modal-input-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    
+    .input-group {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .input-group input {
+      margin-right: 2rem;
+    }
+    
+    .input-group .input-long{
+      margin-right: 2rem;
+    }
+
+    .input-short {
+      width: 20%;
+    }
+    
+    .input-long {
+      width: 40%;
+    }
+    .modal-content {
+      width: 70vw;
+    }
+    
   }

@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/content.css'; 
+import ModalComponent from './ModalComponent';
+
 
 
 const Content = ({ imageSrc, header, text1, text2, text3, className,btnText, secondButtonClass }) => {
     const containerClassName = `image-text-container ${className}`;
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
   
     return (
       <div className='content-wrapper'>
@@ -19,8 +30,9 @@ const Content = ({ imageSrc, header, text1, text2, text3, className,btnText, sec
             <div className="button-container">
               <button className='content-button'>{btnText}</button>
               {secondButtonClass && (
-                <button className={`content-button ${secondButtonClass}`}>Ansøg nu</button>
+                <button onClick={openModal} className={`content-button ${secondButtonClass}`}>Ansøg nu</button>
               )}
+                {isModalOpen && <ModalComponent closeModal={closeModal} />}
             </div>
           </div>
         </div>

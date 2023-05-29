@@ -1,15 +1,10 @@
 Ting der mangler:
 
 Finde en bedre måde at holde billeder 
-Lave Navbar færdig
 Tjekke små fejl 
 Billede i midten på banner med billede er fucked ift de andre 
-content sections for høje det kan evt fikses ved dynamisk classname ligesom på div'en undervisning
 
 PRIOTERINGSLISTE:
-Ansøgning modal??
-Navbar
-ContentSection
 Tjekke småfejl
 Billede i banner
 
@@ -17,16 +12,11 @@ Billede i banner
 
 ########################## TO DO LISTE ################################
 
-1:Lave Nav færdig -> RIK
 
-2:Lave Ansøg koblet med API -> Daniel
+1:Lave Ansøg til flere screens -> semi mangler lige udførlig gennemcheck af rik
+ 
+2: Lave animationer til Ansøg + Fagvælger -> Rik
 
-3:Lave Ansøg til flere screens ->
 
-4: Lave animationer til Ansøg + Fagvælger -> Rik
-
-5: Sikre at Alle knapper linker til rigtige ting ( ansøg knapper åbner modal osv) -> Begge
-
-6: 
 
 EVT: Sørge for at man ikke kan scrolle på siden når modal åben
