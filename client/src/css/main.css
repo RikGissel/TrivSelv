@@ -171,7 +171,7 @@
   font-weight: 500;
   font-size: 16px;
 }
-.lessons-container .popup-close {
+.lessons-container .close-btn {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -191,8 +191,4 @@
   justify-content: center;
   align-items: center;
   z-index: 999; /* Ensure the overlay appears above other content */
-}
-
-.lesson-section__3 > .popup {
-  color: red !important;
 }/*# sourceMappingURL=main.css.map */

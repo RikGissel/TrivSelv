@@ -10,7 +10,7 @@ import Banner from './components/banner';
 import Footer from './components/Footer.js';
 
 import reportWebVitals from './reportWebVitals';
-import ContentSwitcher from './components/PopupMap';
+import ContentSwitcher from './components/LessonMap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

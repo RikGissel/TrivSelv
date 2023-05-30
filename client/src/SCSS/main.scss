@@ -192,7 +192,7 @@ line-height: 1.2em;
   font-size: 16px;
 }
 
-.popup-close {
+.close-btn {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -214,8 +214,4 @@ line-height: 1.2em;
   align-items: center;
   z-index: 999; /* Ensure the overlay appears above other content */
 }
-}
-
-.lesson-section__3 > .popup {
-  color: red !important;
 }
