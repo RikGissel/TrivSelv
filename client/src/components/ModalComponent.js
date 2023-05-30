@@ -13,6 +13,7 @@ const ModalComponent = ({ closeModal }) => {
     grundskole: [],
     trivsel: [],
     billede: null,
+    andet: null,
     consent: false,
   });
 
@@ -102,15 +103,17 @@ const ModalComponent = ({ closeModal }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     const isFormValid = validateForm();
     if (isFormValid && formData.consent) {
+      const formDataToSend = new FormData();
+      formDataToSend.append('billede', formData.billede); 
+      formDataToSend.append('name', formData.name); 
+      formDataToSend.append('email', formData.email);
+  
       fetch('https://formspree.io/f/xpzeebwe', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+        body: formDataToSend, // Send the combined FormData object
       })
         .then((response) => response.json())
         .then((data) => {
@@ -149,8 +152,9 @@ const ModalComponent = ({ closeModal }) => {
             har kvalifikationerne til det.
           </p>
 
-          {/* Input fields */}
-          <div className='modal-input-container'>
+{/* Input fields */}
+<div className='modal-input-container'>
+
   <div className='input-group'>
     {formErrors.navn && <span className="error-message">{formErrors.navn}</span>}
     <input
@@ -231,6 +235,8 @@ const ModalComponent = ({ closeModal }) => {
 </div>
 
 
+
+
           {/* Check buttons */}
 <div className='check-group-container'>         
   <div className="check-group">
@@ -309,6 +315,7 @@ const ModalComponent = ({ closeModal }) => {
   </label>
 </div>
 
+
 <div className="check-group">
 <h4>Trivsel</h4>
             <label>
@@ -382,7 +389,13 @@ const ModalComponent = ({ closeModal }) => {
         {/* Upload image button */}
         <div className='file-group'>
           <h4>Upload billede</h4>
-          <input type="file" onChange={handleFileChange} />
+          <input type="file" onChange={handleFileChange} accept="image/png, image/jpeg"/>
+        </div>
+        <div className='file-group'>
+          <h4>Øvrige dokumenter</h4>
+          <input type="file" name='billede' required onChange={handleFileChange} multiple accept='application/pdf, image/png'/>
+            
+       
         </div>
         {/* Consent checkbox */}
         <div className='consent-group'>
@@ -394,17 +407,19 @@ const ModalComponent = ({ closeModal }) => {
               checked={formData.consent}
               onChange={handleConsentChange}
               required
-            />
+              />
           </label>
+          
+        
           <p className='consent-text'>
             Du giver hermed samtykke til, at oplysninger du har givet om dig selv kan registreres af TrivSelv ApS., idet registreringen er nødvendig for vurdering af ansøgningen til BOOSTER-rollen som BOOSTER hos TrivSelv ApS. Du er bekendt med, at samtykket til enhver tid kan tilbagekaldes, hvorved TrivSelv ApS. forpligtes til at slette oplysningerne om dig. Du meddeler tillige samtykke til, at TrivSelv ApS. kan foretage registrering af disse oplysninger. Hvis du tilknyttes som BOOSTER, gemmer vi dine oplysninger i løbet af hele din tilknytning hos TrivSelv ApS., hvorimod vi straks sletter alle data og personoplysninger, såfremt du får afslag på din ansøgning efter screening eller efter samtale.
           </p>
 
         </div>
         <div className='modal-button-container'>
-          <button className='modal-button' onClick={handleSubmit}>Insend</button>
+          <button  className='modal-button' onClick={handleSubmit}>Indsend</button>
         </div>
-      </div>
+      </div>     
     </div>
   );
 };
