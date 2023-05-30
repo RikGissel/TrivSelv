@@ -121,7 +121,7 @@ const ModalComponent = ({ closeModal }) => {
   
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+   /*  e.preventDefault(); */
   
     const isFormValid = validateForm();
     if (isFormValid && formData.consent) {
