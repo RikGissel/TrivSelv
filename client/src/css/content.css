@@ -81,6 +81,7 @@
     border-color: var(--main-pink-color);
     font-family: var(--font-inter);
     font-weight: 700;
+    transition: all 0.3s ease-in-out;
   }
 
 .apply-button{

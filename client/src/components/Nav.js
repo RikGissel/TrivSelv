@@ -28,7 +28,7 @@ function Nav() {
             isMobileMenuOpen ? "open" : ""
           }`}
         >
-          <li>Booster</li>
+          <li><a href="#section-content-wrapper">Booster</a></li>
           <li>Fag</li>
           <li>Om os</li>
           <li className="navbar-contact">
@@ -42,7 +42,7 @@ function Nav() {
       </div>
       <div className={`navbar-menu`}>
         <ul>
-          <li>Booster</li>
+          <li><a href="#section-content-wrapper">Booster</a></li>
           <li>Fag</li>
           <li>Om os</li>
           <li className="navbar-contact">

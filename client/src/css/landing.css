@@ -25,6 +25,10 @@
     height: 100px;
   }
 
+  .content-wrapper {
+    scroll-margin-top: 100px;
+  }
+
 
 .landing-wrapper {
 
@@ -86,6 +90,11 @@
     align-self: flex-start;
     margin-left: 20%;
     font-weight: 700;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .landing-button:hover {
+    background-color: var(--main-hover-color);
   }
 
   .landing-paragraph{

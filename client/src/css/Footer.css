@@ -30,6 +30,15 @@ footer li {
 
 }
 
+.footer-mail {
+  color: #b5acdb;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-mail:hover {
+  color: var(--main-pink-color);
+}
+
 footer hr {
   width: 60%;
   border: 1.5px solid #b5acdb;
