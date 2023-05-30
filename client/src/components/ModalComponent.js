@@ -51,7 +51,7 @@ const ModalComponent = ({ closeModal }) => {
     }));
   };
 
-/*   const [andetFile, setAndetFile] = useState(null);
+  const [andetFile, setAndetFile] = useState(null);
 
   const handleAndetFileChange = (e) => {
     const file = e.target.files[0];
@@ -68,7 +68,7 @@ const ModalComponent = ({ closeModal }) => {
     } else {
       console.error("Invalid file type. Only PDF and image files are allowed.");
     }
-  }; */
+  };
   
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -137,9 +137,9 @@ const ModalComponent = ({ closeModal }) => {
       formDataToSend.append('grundskole', formData.grundskole);
       formDataToSend.append('trivsel', formData.trivsel);
       formDataToSend.append('consent', formData.consent);      
-/*       if (andetFile) {
+      if (andetFile) {
         formDataToSend.append('andet', andetFile);
-      } */
+      }
       
   
       fetch('https://formspree.io/f/xpzeebwe', {
@@ -148,6 +148,7 @@ const ModalComponent = ({ closeModal }) => {
       })
         .then((response) => response.json())
         .then((data) => {
+          alert("Nice!")
           console.log('Form submission successful:', data);
           closeModal(); 
         })
@@ -171,7 +172,8 @@ const ModalComponent = ({ closeModal }) => {
   }, []);
 
   return (
-    <div className="modal">
+<div className="modal">
+  <form method="POST" action="https://formspree.io/f/xpzeebwe" encType="multipart/form-data">
       <div className="modal-content" ref={modalRef}>
         <div className='modal-wrapper'>
           <button className="close-button" onClick={closeModal}>
@@ -183,8 +185,9 @@ const ModalComponent = ({ closeModal }) => {
             har kvalifikationerne til det.
           </p>
 
-{/* Input fields */}
-<div className='modal-input-container'>
+    {/* Input fields */}
+ 
+    <div className='modal-input-container'>
 
   <div className='input-group'>
     {formErrors.navn && <span className="error-message">{formErrors.navn}</span>}
@@ -263,7 +266,8 @@ const ModalComponent = ({ closeModal }) => {
       className="input-long"
     />
   </div>
-</div>
+  
+  </div>
 
 
 
@@ -344,7 +348,7 @@ const ModalComponent = ({ closeModal }) => {
     <input type="checkbox" name="grundskole" value="Afsætning" checked={formData.grundskole.includes('Afsætning')} onChange={handleCheckboxChange} />
       <span className="labelTxt">Afsætning</span>
   </label>
-</div>
+  </div>
 
 
 <div className="check-group">
@@ -422,10 +426,10 @@ const ModalComponent = ({ closeModal }) => {
           <h4>Upload billede</h4>
           <input type="file" name='billede' onChange={handleFileChange} accept="image/png, image/jpeg"/>
         </div>
-{/*         <div className='file-group'>
+       <div className='file-group'>
           <h4>Øvrige dokumenter</h4>
           <input type="file" name='andet' onChange={handleAndetFileChange} multiple accept=".pdf, image/*"/>                 
-        </div> */}
+        </div>
 
 
         {/* Consent checkbox */}
@@ -450,7 +454,8 @@ const ModalComponent = ({ closeModal }) => {
         <div className='modal-button-container'>
           <button  className='modal-button' onClick={handleSubmit}>Indsend</button>
         </div>
-      </div>     
+      </div> 
+      </form>
     </div>
   );
 };
