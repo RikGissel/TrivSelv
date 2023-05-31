@@ -402,7 +402,7 @@ const ModalComponent = ({ closeModal }) => {
 
         </div>
         <div className='modal-button-container'>
-          <button className='modal-button' onClick={handleSubmit}>Indsend</button>
+          <button className='modal-button' onClick={handleSubmit}>Insend</button>
         </div>
       </div>
     </div>
