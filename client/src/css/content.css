@@ -23,8 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 30px 30px 30px;
-    margin-bottom: 50px;
+    width: 80%;
+    margin: 50px 0;
   }
 
   .second-content-section{
@@ -33,6 +33,8 @@
   .second-content-section .content-text-box{
     margin-right: 40px;
   }
+
+  
   
   .content-image {
     width:  50%; 
@@ -43,12 +45,7 @@
     flex-direction: column;
   }
   
-  .content-text-box {
-    margin-left: 40px; 
-    width: 50%;
-
-    
-  }
+  
   
   .content-text-box h3{
     color: var(--main-purple-color);
