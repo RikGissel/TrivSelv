@@ -354,67 +354,67 @@ const ModalComponent = ({ closeModal }) => {
 <div className="check-group">
 <h4>Trivsel</h4>
             <label>
-          <input type="checkbox" name="grundskole" value="Fysisk Trivsel" checked={formData.grundskole.includes('Fysisk Trivsel')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Fysisk Trivsel" checked={formData.trivsel.includes('Fysisk Trivsel')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Fysisk Trivsel</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Psykisk Trivsel" checked={formData.grundskole.includes('Psykisk Trivsel')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Psykisk Trivsel" checked={formData.trivsel.includes('Psykisk Trivsel')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Psykisk Trivsel</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Social Trivsel" checked={formData.grundskole.includes('Social Trivsel')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Social Trivsel" checked={formData.trivsel.includes('Social Trivsel')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Social Trivsel</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Kost & Motion" checked={formData.grundskole.includes('Kost & Motion')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Kost & Motion" checked={formData.trivsel.includes('Kost & Motion')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Kost & Motion</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Angst Støtte" checked={formData.grundskole.includes('Angst Støtte')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Angst Støtte" checked={formData.trivsel.includes('Angst Støtte')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Angst Støtte</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Digital Dannelse" checked={formData.grundskole.includes('Digital Dannelse')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Digital Dannelse" checked={formData.trivsel.includes('Digital Dannelse')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Digital Dannelse</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Støtte Venskab" checked={formData.grundskole.includes('Støtte Venskab')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Støtte Venskab" checked={formData.trivsel.includes('Støtte Venskab')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Støtte Venskab</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Misbrug & Afhængighed" checked={formData.grundskole.includes('Misbrug & Afhængighed')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Misbrug & Afhængighed" checked={formData.trivsel.includes('Misbrug & Afhængighed')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Misbrug & Afhængighed</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="ADHD/ADD-støtte" checked={formData.grundskole.includes('ADHD/ADD-støtte')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="ADHD/ADD-støtte" checked={formData.trivsel.includes('ADHD/ADD-støtte')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">ADHD/ADD-støtte</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Højt Begavede" checked={formData.grundskole.includes('Højt Begavede')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Højt Begavede" checked={formData.trivsel.includes('Højt Begavede')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Højt Begavede</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Sorg Støtte" checked={formData.grundskole.includes('Sorg Støtte')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Sorg Støtte" checked={formData.trivsel.includes('Sorg Støtte')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Sorg Støtte</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Seksualvejledning" checked={formData.grundskole.includes('Seksualvejledning')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Seksualvejledning" checked={formData.trivsel.includes('Seksualvejledning')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Seksualvejledning</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Uddannelsesvejledning" checked={formData.grundskole.includes('Uddannelsesvejledning')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Uddannelsesvejledning" checked={formData.trivsel.includes('Uddannelsesvejledning')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Uddannelsesvejledning</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Stress Støtte" checked={formData.grundskole.includes('Stress Støtte')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Stress Støtte" checked={formData.trivsel.includes('Stress Støtte')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Stress Støtte</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Skolevægring" checked={formData.grundskole.includes('Skolevægring')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Skolevægring" checked={formData.trivsel.includes('Skolevægring')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Skolevægring</span>
           </label>
           <label>
-          <input type="checkbox" name="grundskole" value="Uddannelsesparathed & Info" checked={formData.grundskole.includes('Uddannelsesparathed & Info')} onChange={handleCheckboxChange}/>
+          <input type="checkbox" name="trivsel" value="Uddannelsesparathed & Info" checked={formData.trivsel.includes('Uddannelsesparathed & Info')} onChange={handleCheckboxChange}/>
           <span className="labelTxt">Uddannelsesparathed & Info</span>
           </label>           
       </div>
