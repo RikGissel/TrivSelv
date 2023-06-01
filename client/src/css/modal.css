@@ -117,14 +117,7 @@ textarea.input-long {
   font-family: var(--font-Montserrat);
 }
 
-.modal-content textarea::placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 15px;
-  color: var(--main-text-color);
-  transform: translateY(15%);
-}
+
 
 .modal-content textarea.input-long {
   padding-top: 5px;
