@@ -196,4 +196,10 @@ html {
   justify-content: center;
   align-items: center;
   z-index: 10; /* Ensure the overlay appears above other content */
+}
+
+@media (max-width: 576px) {
+  .lessons-main__wrapper {
+    width: 95vw;
+  }
 }/*# sourceMappingURL=main.css.map */
