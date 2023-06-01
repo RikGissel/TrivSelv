@@ -64,8 +64,6 @@ const lessonsInfo = {
     title: 'Musik',
     requirements: (
       <>
-        Min. 18 år & 2.G gennemført musisk linje
-        <br />
         Grundlæggende musisk forståelse
         <br />
         Eller anden relevant baggrund
@@ -76,8 +74,6 @@ const lessonsInfo = {
     title: 'Billedkunst',
     requirements: (
       <>
-        Min. 18 år & 2.G gennemført
-        <br />
         Eller anden relevant baggrund
       </>
     ),

@@ -25,11 +25,17 @@
     align-items: center;
     padding: 30px 30px 30px 30px;
     margin-bottom: 50px;
+    width: 85%;
   }
 
   .second-content-section{
     flex-direction: row-reverse;
   }
+
+  .first-content-section .content-text-box {
+margin-left: 40px;
+  }
+
   .second-content-section .content-text-box{
     margin-right: 40px;
   }
@@ -44,7 +50,6 @@
   }
   
   .content-text-box {
-    margin-left: 40px; 
     width: 50%;
 
     
@@ -112,6 +117,10 @@
     .content-wrapper {
       flex-direction: column;
     }
+
+    .banner-images {
+      padding: 0 2%;
+    }
   
     .image-text-container {
       flex-direction: column;
@@ -125,8 +134,12 @@
   
     .content-text-box {
       margin-left: 0;
-      width: 100%;
+      width: 95vw;
       margin-top: 20px;
+    }
+
+    .first-content-section .content-text-box {
+      margin-left: 0px;
     }
 
     .content-header-text{

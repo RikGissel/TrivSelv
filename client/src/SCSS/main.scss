@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 // helpers imports
@@ -216,6 +217,7 @@ line-height: 1.2em;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* Ensure the overlay appears above other content */
+  z-index: 10; /* Ensure the overlay appears above other content */
 }
 }
+
