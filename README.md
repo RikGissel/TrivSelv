@@ -14,15 +14,15 @@ trivselv-main
 │  │  ├─ content-1.jpg
 │  │  ├─ content-2.jpg
 │  │  ├─ content-3.jpg
-│  │  ├─ favicon.ico
 │  │  ├─ index.html
 │  │  ├─ land-img.jpg
 │  │  ├─ manifest.json
 │  │  ├─ robots.txt
+│  │  ├─ Trivselv_Trademark.png
 │  │  └─ x-icon.svg
 │  ├─ README.md
 │  └─ src
-│     ├─ App.js
+│     ├─ App.jsx
 │     ├─ App.test.js
 │     ├─ assets
 │     │  ├─ icons
@@ -40,10 +40,10 @@ trivselv-main
 │     │  ├─ content.js
 │     │  ├─ Footer.js
 │     │  ├─ landing.js
+│     │  ├─ LessonMap.jsx
 │     │  ├─ modal.js
 │     │  ├─ ModalComponent.js
-│     │  ├─ Nav.js
-│     │  └─ PopupMap.jsx
+│     │  └─ Nav.js
 │     ├─ css
 │     │  ├─ banner.css
 │     │  ├─ content.css
@@ -53,7 +53,14 @@ trivselv-main
 │     │  ├─ main.css.map
 │     │  ├─ modal.css
 │     │  └─ nav.css
+│     ├─ data
+│     │  ├─ lessonInfo.jsx
+│     │  └─ lessons.jsx
 │     ├─ index.js
+│     ├─ json
+│     │  └─ sectionData.json
+│     ├─ pages
+│     │  └─ thank-you.html
 │     ├─ reportWebVitals.js
 │     ├─ SCSS
 │     │  ├─ helpers
@@ -63,8 +70,6 @@ trivselv-main
 │     │  ├─ modules
 │     │  └─ pages
 │     └─ setupTests.js
-├─ json
-│  └─ lessons.json
 ├─ package-lock.json
 ├─ package.json
 ├─ README.md
