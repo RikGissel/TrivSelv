@@ -38,18 +38,17 @@ const PopupContent = ({ selectedLesson, activeSection }) => {
         <br />
         Generelle Krav:
         <br />
-        <p className="popup-txt" style={{ marginBottom: '20px' }}>
-          {school}{college}
+        <p className="popup-txt">
+          {school}{college}{requirements && <p className="popup-txt">{requirements}</p>}
           <br />
           <p>{languageSkills}{advancedLanguage}</p>
         </p>
         {additionalRequirements && (
           <>
-            Evt. særlige krav:
+            <p style={{ marginTop: '20px' }}>Evt. særlige krav:</p>
             <p className="popup-txt">{additionalRequirements}</p>
           </>
         )}
-        {requirements && <p className="popup-txt">{requirements}</p>}
       </>
     );
   }
@@ -69,6 +68,7 @@ const Lessons = ({ selectedLesson, selectedBox, activeSection, handleClosePopup 
     'Fransk',
     'Dansk',
     'Biologi',
+    'Bioteknologi',
     'Historie',
     'Dansk som andetsprog',
     'Natur/Teknologi',
