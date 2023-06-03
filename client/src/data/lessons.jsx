@@ -17,11 +17,20 @@ const Popup = ({ content, onClose }) => {
   );
 };
 
-const PopupContent = ({ selectedLesson }) => {
+const PopupContent = ({ selectedLesson, activeSection }) => {
   const sections = jsonData;
 
-  if (sections.section1.includes(selectedLesson)) {
-    const { title, languageSkills, additionalRequirements, requirements } = lessonsInfo[selectedLesson];
+  if (sections.section1.includes(selectedLesson) || sections.section2.includes(selectedLesson)) {
+    const lessonInfo =
+      activeSection === 'section1'
+        ? lessonsInfo[selectedLesson]?.section1
+        : lessonsInfo[selectedLesson]?.section2;
+
+    if (!lessonInfo) {
+      return null;
+    }
+
+    const { title, school, college, languageSkills, advancedLanguage, additionalRequirements, requirements } = lessonInfo;
 
     return (
       <>
@@ -30,9 +39,9 @@ const PopupContent = ({ selectedLesson }) => {
         Generelle Krav:
         <br />
         <p className="popup-txt" style={{ marginBottom: '20px' }}>
-          Min. 18 år & 2.G gennemført
+          {school}{college}
           <br />
-          <p>{languageSkills}</p>
+          <p>{languageSkills}{advancedLanguage}</p>
         </p>
         {additionalRequirements && (
           <>
@@ -48,7 +57,9 @@ const PopupContent = ({ selectedLesson }) => {
   return null;
 };
 
-const Lessons = ({ selectedLesson, activeSection, handleClosePopup }) => {
+
+
+const Lessons = ({ selectedLesson, selectedBox, activeSection, handleClosePopup }) => {
   const lectures = [
     'Tysk',
     'Spansk',
@@ -72,7 +83,16 @@ const Lessons = ({ selectedLesson, activeSection, handleClosePopup }) => {
   if (selectedLesson && activeSection === 'section1' && lectures.includes(selectedLesson)) {
     return (
       <Popup
-        content={<PopupContent selectedLesson={selectedLesson} />}
+        content={<PopupContent selectedLesson={selectedLesson} activeSection={activeSection} />}
+        onClose={handleClosePopup}
+      />
+    );
+  }
+
+  if (selectedBox && activeSection === 'section2' && lectures.includes(selectedBox)) {
+    return (
+      <Popup
+        content={<PopupContent selectedLesson={selectedBox} activeSection={activeSection} />}
         onClose={handleClosePopup}
       />
     );

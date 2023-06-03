@@ -6,18 +6,26 @@ import '../css/main.css';
 const ContentSwitcher = () => {
   const [activeSection, setActiveSection] = useState('section1');
   const [selectedLesson, setselectedLesson] = useState('');
+  const [selectedBox, setSelectedBox] = useState('');
 
   const handleButtonClick = (sectionName) => {
     setActiveSection(sectionName);
     setselectedLesson('');
+    setSelectedBox('');
   };
 
   const handleLanguageClick = (language, className) => {
-    setselectedLesson(language);
+    if (activeSection === 'section2') {
+      setSelectedBox(language);
+    } else {
+      setselectedLesson(language);
+      setSelectedBox('');
+    }
   };
 
   const handleClosePopup = () => {
     setselectedLesson('');
+    setSelectedBox('');
   };
 
   const getSectionLabel = (sectionName) => {
@@ -53,7 +61,7 @@ const ContentSwitcher = () => {
             <div className={`lesson-section__${activeSection.slice(-1)}`}>
               {sectionData[activeSection].map((language, index) => (
                 <div
-                  className={`box-${activeSection.slice(-1)}`}
+                  className={`box-${activeSection.slice(-1)} ${selectedBox === language ? 'active' : ''}`}
                   onClick={() => handleLanguageClick(language, `box-${activeSection.slice(-1)}`)}
                   key={index}
                 >
@@ -63,9 +71,9 @@ const ContentSwitcher = () => {
             </div>
           )}
 
-          {/* Replace the existing Popups with YourComponent */}
           <Lessons
             selectedLesson={selectedLesson}
+            selectedBox={selectedBox}
             activeSection={activeSection}
             handleClosePopup={handleClosePopup}
           />

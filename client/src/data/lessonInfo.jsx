@@ -1,40 +1,101 @@
-import React from 'react';
+import React from "react";
 
 const lessonsInfo = {
   Tysk: {
-    title: 'Tysk',
-    languageSkills: 'Gode sprogkundskaber skriftligt og mundtligt',
-    additionalRequirements: '(skal være fortsættersprog)',
+    section1: {
+      title: "Tysk",
+      school: "Min. 18 år & 2.G gennemført",
+      languageSkills: "Gode sprogkundskaber skriftligt og mundtligt",
+      additionalRequirements: "(skal være fortsættersprog)",
+    },
+    section2: {
+      title: "Tysk",
+      college: "4. semester gennemført på fagrelevant uddannelse",
+      advancedLanguage: (
+        <>
+          Avancerede mundtlige og skriftlige færdigheder
+          <br />
+          Eller anden relevant baggrund
+        </>
+      ),
+    },
   },
   Spansk: {
-    title: 'Spansk',
-    languageSkills: 'Gode sprogkundskaber skriftligt og mundtligt',
+    section1: {
+    title: "Spansk",
+    school: "Min. 18 år & 2.G gennemført",
+    languageSkills: "Gode sprogkundskaber skriftligt og mundtligt",
+    },
+    section2: {
+      title: "Spansk",
+      college: "4. semester gennemført på fagrelevant uddannelse",
+      advancedLanguage: (
+        <>
+          Avancerede mundtlige og skriftlige færdigheder
+          <br />
+          Eller anden relevant baggrund
+        </>
+      ),
+    },
   },
   Engelsk: {
-    title: 'Engelsk',
-    languageSkills: 'Gode sprogkundskaber skriftligt og mundtligt',
+    section1: {
+    title: "Engelsk",
+    school: "Min. 18 år & 2.G gennemført",
+    languageSkills: "Gode sprogkundskaber skriftligt og mundtligt",
+    },
+    section2: {
+      title: "Engelsk",
+      college: "4. semester gennemført på fagrelevant uddannelse",
+      advancedLanguage: "Avancerede mundtlige og skriftlige færdigheder",
+    },
   },
   Samfundsfag: {
-    title: 'Samfundsfag',
+    title: "Samfundsfag",
+    school: "Min. 18 år & 2.G gennemført",
   },
   Matematik: {
-    title: 'Matematik',
+    title: "Matematik",
+    school: "Min. 18 år & 2.G gennemført",
   },
   Fransk: {
-    title: 'Fransk',
-    languageSkills: 'Gode sprogkundskaber skriftligt og mundtligt',
+    section1: {
+    title: "Fransk",
+    school: "Min. 18 år & 2.G gennemført",
+    languageSkills: "Gode sprogkundskaber skriftligt og mundtligt",
+    },
+    section2: {
+      title: "Fransk",
+      college: "4. semester gennemført på fagrelevant uddannelse",
+      advancedLanguage: (
+        <>
+          Avancerede mundtlige og skriftlige færdigheder
+          <br />
+          Eller anden relevant baggrund
+        </>
+      ),
+    },
   },
   Dansk: {
-    title: 'Dansk',
+    section1: {
+      title: "Dansk",
+      school: "Min. 18 år & 2.G gennemført",
+    },
+    section2: {
+      title: "Dansk",
+      college: "4. semester gennemført på fagrelevant uddannelse",
+    },
   },
   Biologi: {
-    title: 'Biologi',
+    title: "Biologi",
+    school: "Min. 18 år & 2.G gennemført",
   },
   Historie: {
-    title: 'Historie',
+    title: "Historie",
+    school: "Min. 18 år & 2.G gennemført",
   },
-  'Dansk som andetsprog': {
-    title: 'Dansk som andetsprog',
+  "Dansk som andetsprog": {
+    title: "Dansk som andetsprog",
     requirements: (
       <>
         Læreruddannet med DSA kendskab
@@ -51,17 +112,20 @@ const lessonsInfo = {
       </>
     ),
   },
-  'Natur/Teknologi': {
-    title: 'Natur/Teknologi',
+  "Natur/Teknologi": {
+    title: "Natur/Teknologi",
+    school: "Min. 18 år & 2.G gennemført",
   },
-  'Fysik/Kemi': {
-    title: 'Natur/Teknologi',
+  "Fysik/Kemi": {
+    title: "Natur/Teknologi",
+    school: "Min. 18 år & 2.G gennemført",
   },
   Idræt: {
-    title: 'Idræt',
+    title: "Idræt",
+    school: "Min. 18 år & 2.G gennemført",
   },
   Musik: {
-    title: 'Musik',
+    title: "Musik",
     requirements: (
       <>
         Grundlæggende musisk forståelse
@@ -71,18 +135,17 @@ const lessonsInfo = {
     ),
   },
   Billedkunst: {
-    title: 'Billedkunst',
-    requirements: (
-      <>
-        Eller anden relevant baggrund
-      </>
-    ),
+    title: "Billedkunst",
+    school: "Min. 18 år & 2.G gennemført",
+    requirements: <>Eller anden relevant baggrund</>,
   },
   Kristendomskundskab: {
-    title: 'Kristendomskundskab',
+    title: "Kristendomskundskab",
+    school: "Min. 18 år & 2.G gennemført",
   },
   Geografi: {
-    title: 'Geografi',
+    title: "Geografi",
+    school: "Min. 18 år & 2.G gennemført",
   },
 };
 
