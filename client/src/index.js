@@ -40,7 +40,11 @@ root.render(
     text1={"Vi skaber trivsel hos børn & unge gennem en holistisk og anerkendende tilgang i hele vores virke. Vi tror på, at din trivsel er lige så betydningsfuld som det, du gør for andre. Vi forstår os på, hvor vigtigt din tid er. Derfor tilbyder vi høj grad af fleksibilitet og sparring, mens du gør det, du er bedst til – og samtidig styrker din egen faglighed."}
     text2={"Vi er nysgerrig på dig og sætter pris på dine kompetencer. Vi tilbyder dig som BOOSTER, muligheden for at styrke din egen personlige udvikling mens vi i fællesskab gør en værdifuld forskel for børn og unge. At være en del af TrivSelv betyder at være en del af noget større."}
     text3={"For os er det ikke et krav, at du har undervisningserfaring. Du skal dog være fyldt 18 år, være i gang med – eller have færdiggjort din ungdomsuddannelse samt kunne fremvise ren Straffe- og Børneattest."}
-    btnText={"Skriv til os"}
+    btnText={
+      <a href="mailto:booster@trivselv.dk" className="content-send-btn">
+        Skriv til os
+      </a>
+    }
     secondButtonClass="apply-button"
   />
 
@@ -54,16 +58,21 @@ root.render(
     <Banner type="text" text1="”… en vision om at alle børn får den hjælp og støtte, de har brug for, til at kunne realisere deres fulde potentiale”" text2="- TrivSelv" /> 
 
 
-   <Content 
-    className={"second-content-section"}
-    imageSrc={process.env.PUBLIC_URL + '/content-3.jpg'}
-    header={"Om os"}
-    text1={"Bag TrivSelv står Thomas & Mathias, der begge arbejder som folkeskolelærere i Aarhus kommune. Thomas kommer fra en lang karriere som professionel badmintontræner og Mathias fra en karriere i forsvaret. Til dagligt arbejder de både i almen og specialpædagogisk regi samt AKT på Tilst skole."}
-    text2={"Vores erfaringer som skolelærere i den danske folkeskole viser, at der eksisterer et stigende behov for opmærksomhed på det enkelte barn & ung. Et behov, der kan være svært at imødekomme i en hektisk hverdag. Vi adskiller os fra andre mentorvirksomheder på vores holistiske syn på trivsel. Hos os møder faglig, personlig og social trivsel hinanden."}
-    text3={"Hos TrivSelv har vi en vision om at alle børn får den hjælp og støtte, de har brug for, til at kunne realisere deres fulde potentiale. At alle børn kommer til at opleve en meningsgivende hverdag med skoleglæde, gode kammerater og en følelse af succes."}
-    btnText={"Skriv til os"}
-    secondButtonClass="apply-button"
-  />
+    <Content
+  className={"second-content-section"}
+  imageSrc={process.env.PUBLIC_URL + '/content-3.jpg'}
+  header={"Om os"}
+  text1={"Bag TrivSelv står Thomas & Mathias, der begge arbejder som folkeskolelærere i Aarhus kommune. Thomas kommer fra en lang karriere som professionel badmintontræner og Mathias fra en karriere i forsvaret. Til dagligt arbejder de både i almen og specialpædagogisk regi samt AKT på Tilst skole."}
+  text2={"Vores erfaringer som skolelærere i den danske folkeskole viser, at der eksisterer et stigende behov for opmærksomhed på det enkelte barn & ung. Et behov, der kan være svært at imødekomme i en hektisk hverdag. Vi adskiller os fra andre mentorvirksomheder på vores holistiske syn på trivsel. Hos os møder faglig, personlig og social trivsel hinanden."}
+  text3={"Hos TrivSelv har vi en vision om at alle børn får den hjælp og støtte, de har brug for, til at kunne realisere deres fulde potentiale. At alle børn kommer til at opleve en meningsgivende hverdag med skoleglæde, gode kammerater og en følelse af succes."}
+  btnText={
+    <a href="mailto:booster@trivselv.dk" className="content-send-btn">
+      Skriv til os
+    </a>
+  }
+  secondButtonClass="apply-button"
+/>
+
 
   <App />
   

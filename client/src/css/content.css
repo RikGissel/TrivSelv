@@ -89,6 +89,11 @@ margin-left: 40px;
     transition: all 0.3s ease-in-out;
   }
 
+  .content-send-btn {
+    text-decoration: none;
+    color: #fff;
+  }
+
 .apply-button{
     background-color: var(--main-white-color);
     color: var(--main-pink-color);
