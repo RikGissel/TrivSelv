@@ -119,6 +119,7 @@ html {
   top: 50%;
   left: 50%;
   width: fit-content;
+  color: #7b5ec6;
   font-size: 16px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
