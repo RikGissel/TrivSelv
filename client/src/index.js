@@ -30,7 +30,11 @@ root.render(
     text1={"Vi tilbyder ikke kun undervisning og faglig støtte, men også trivselsstøtte, der fokuserer på den personlige udvikling af hvert enkelt barn og ung. Vi faciliterer desuden spændende undervisningsdage til skoler og foreninger, som bliver varetaget af vores fantastiske BOOSTERE."}
     text2={"Som BOOSTER hos TrivSelv får du muligheden for at udfolde dig inden for det, du er bedst til. Dette sikrer, at vi kan tilbyde kvalitet og nærvær i en bred vifte af muligheder, hvor du kan vælge at arbejde med undervisning i grundskole- og gymnasiefag, personlig og social trivsel eller en kombination af begge. Der er mange muligheder, hvis du brænder ligesom os for at gøre en forskel for andre."}
     text3={"Vi er skabt for at gøre en uvurderlig forskel. Derfor søger vi engagerede og passionerede BOOSTERE, der ønsker at inspirere andre og gøre en betydelig forskel i livet for dem, der har brug for vores hjælp. Lad os sammen skabe en positiv forandring i verden."}
-    btnText={"Fagområder"}
+    btnText={
+      <a href="#lessons-container-main" className="content-send-btn">
+        Fagområder
+      </a>
+    }
   />
 
   <Content
