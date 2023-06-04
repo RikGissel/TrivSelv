@@ -139,7 +139,6 @@ color: #fff;
           transform: translate(-50%, -50%);
   background-color: #fff;
   padding: 50px;
-  color: #7B5EC6;
   font-weight: 800;
   font-size: 20px;
   border-radius: 10px;
@@ -152,9 +151,11 @@ color: #fff;
 line-height: 1.2em;
 }
 
-#trivselv-popup {
-  color: #a11091;
+.popup-content {
+  color: var(--popup-content-color);
 }
+
+
 
 @media (max-width: 768px) {
   .popup {

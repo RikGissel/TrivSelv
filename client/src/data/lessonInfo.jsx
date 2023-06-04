@@ -54,6 +54,10 @@ const lessonsInfo = {
     section1: {
     title: "Samfundsfag",
     school: "Min. 18 år & 2.G gennemført",
+    },
+    section2: {
+      title: "Samfundsfag",
+      college: "4. semester gennemført på fagrelevant uddannelse",
     }
   },
   Matematik: {
@@ -113,6 +117,34 @@ const lessonsInfo = {
     },
   },
 
+  Kemi: {
+    section2: {
+    title: "Kemi",
+    college: "4. semester gennemført på fagrelevant uddannelse",
+    },
+  },
+
+  Naturgeografi: {
+    section2: {
+    title: "Naturgeografi",
+    college: "4. semester gennemført på fagrelevant uddannelse",
+    },
+  },
+
+  Programmering: {
+    section2: {
+    title: "Programmering",
+    college: "4. semester gennemført på fagrelevant uddannelse",
+    },
+  },
+
+  Psykologi: {
+    section2: {
+    title: "Psykologi",
+    college: "4. semester gennemført på fagrelevant uddannelse",
+    },
+  },
+
   Historie: {
     section1: {
     title: "Historie",
@@ -155,6 +187,21 @@ const lessonsInfo = {
     school: "Min. 18 år & 2.G gennemført",
     }
   },
+
+  Religion: {
+    section2: {
+    title: "Religion",
+    college: "4. semester gennemført på fagrelevant uddannelse",
+    },
+  },
+
+  Fysik: {
+    section2: {
+    title: "Fysik",
+    college: "4. semester gennemført på fagrelevant uddannelse",
+    },
+  },
+
   Idræt: {
     section1: {
     title: "Idræt",
@@ -196,6 +243,212 @@ const lessonsInfo = {
     requirements: <>Eller anden relevant baggrund</>,
     }
   },
+
+  "Kost & Motion": {
+    section3: {
+    title: "Kost & Motion",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Idræt, Fysioterapi, Ergoterapi, Medicin, Sygepleje, ernæring & Sundhed m.v.
+      </>
+    ),
+    }
+  },
+
+  "Social Trivsel": {
+    section3: {
+    title: "Social Trivsel",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Psykisk Trivsel": {
+    section3: {
+    title: "Psykisk Trivsel",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Fysisk Trivsel": {
+    section3: {
+    title: "Fysisk Trivsel",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Idræt, Fysioterapi, Ergoterapi, Medicin, Sygepleje m.v.
+      </>
+    ),
+    }
+  },
+
+  "Håndtering af angst": {
+    section3: {
+    title: "Håndtering af angst",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Psykologi, Pædagogik m.v.
+        <br/>
+        Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Digital Dannelse": {
+    section3: {
+    title: "Digital Dannelse",
+    requirements: "4. semester gennemført på fagrelevant uddannelse"
+    }
+  },
+
+  "Hjælp til venskaber": {
+    section3: {
+    title: "Hjælp til venskaber",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Misbrug og afhængighed": {
+    section3: {
+    title: "Misbrug og afhængighed",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Misbrugskonsulent, Psykologi, Socialrådgiver, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Hjælp til ADHD og ADD": {
+    section3: {
+    title: "Hjælp til ADHD og ADD",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Støtte til højt begavede": {
+    section3: {
+    title: "Støtte til højt begavede",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    additionalRequirements: "Kræver indgående kendskab til HB"
+    }
+  },
+
+  "Søvnudfordringer": {
+    section3: {
+    title: "Søvnudfordringer",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Psykologi, medicin, fysioterapi eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Seksualundervisning": {
+    section3: {
+    title: "Seksualundervisning",
+    requirements: (
+      <>
+      4. semester gennemført på fagrelevant uddannelse
+      <br/>
+      Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse med seksualvejledning, Psykoterapeut, Fysioterapeut, Sygepleje eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Uddannelsesvejledning": {
+    section3: {
+    title: "Uddannelsesvejledning",
+    requirements: (
+      <>
+      4. semester gennemført på fagrelevant uddannelse
+        <br />
+        Eks. Uddannelsesvidenskab, Socialrådgiver, Læreruddannelse m.v.
+      </>
+    ),
+    }
+  },
+
+  "Stresshåndtering": {
+    section3: {
+    title: "Stresshåndtering",
+    requirements: (
+      <>
+        4. semester gennemført på fagrelevant uddannelse
+        <br />
+        Psykologi, Medicin, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Skolevægring": {
+    section3: {
+    title: "Skolevægring",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
+  "Uddannelsesparathed": {
+    section3: {
+    title: "Uddannelsesparathed",
+    requirements: (
+      <>
+        Ba i relevant uddannelsesretning
+        <br />
+        Eks. Professionsbachelor i pædagogik, Psykologi, Socialrådgiver, Læreruddannelse, Psykoterapeut eller anden relevant baggrund
+      </>
+    ),
+    }
+  },
+
   Kristendomskundskab: {
     section1: {
     title: "Kristendomskundskab",

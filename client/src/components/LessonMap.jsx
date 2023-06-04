@@ -12,7 +12,13 @@ const ContentSwitcher = () => {
     setActiveSection(sectionName);
     setselectedLesson('');
     setSelectedBox('');
+    if (sectionName === 'section3') {
+      document.documentElement.style.setProperty('--popup-content-color', '#a11091');
+    } else {
+      document.documentElement.style.setProperty('--popup-content-color', '#7b5ec6');
+    }
   };
+  
 
   const handleLanguageClick = (language, className) => {
     if (activeSection === 'section2') {

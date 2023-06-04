@@ -1,6 +1,6 @@
-import React from 'react';
-import jsonData from '../json/sectionData.json';
-import lessonsInfo from './lessonInfo';
+import React from "react";
+import jsonData from "../json/sectionData.json";
+import lessonsInfo from "./lessonInfo";
 
 const Popup = ({ content, onClose }) => {
   return (
@@ -20,32 +20,50 @@ const Popup = ({ content, onClose }) => {
 const PopupContent = ({ selectedLesson, activeSection }) => {
   const sections = jsonData;
 
-  if (sections.section1.includes(selectedLesson) || sections.section2.includes(selectedLesson)) {
+  if (
+    sections.section1.includes(selectedLesson) ||
+    sections.section2.includes(selectedLesson) ||
+    sections.section3.includes(selectedLesson)
+  ) {
     const lessonInfo =
-      activeSection === 'section1'
+      activeSection === "section1"
         ? lessonsInfo[selectedLesson]?.section1
-        : lessonsInfo[selectedLesson]?.section2;
+        : activeSection === "section2"
+        ? lessonsInfo[selectedLesson]?.section2
+        : lessonsInfo[selectedLesson]?.section3;
 
     if (!lessonInfo) {
       return null;
     }
 
-    const { title, school, college, languageSkills, advancedLanguage, additionalRequirements, requirements } = lessonInfo;
+    const {
+      title,
+      school,
+      college,
+      languageSkills,
+      advancedLanguage,
+      additionalRequirements,
+      requirements,
+    } = lessonInfo;
 
     return (
       <>
-        <h2 style={{ transform: 'translateY(25%)' }}>{title}</h2>
+        <h2 style={{ transform: "translateY(25%)" }}>{title}</h2>
         <br />
         Generelle Krav:
         <br />
         <p className="popup-txt">
-          {school}{college}{requirements && <p className="popup-txt">{requirements}</p>}
-          <br />
-          <p>{languageSkills}{advancedLanguage}</p>
+          {school}
+          {college}
+          {requirements && <p className="popup-txt">{requirements}</p>}
+          <p>
+            {languageSkills}
+            {advancedLanguage}
+          </p>
         </p>
         {additionalRequirements && (
           <>
-            <p style={{ marginTop: '20px' }}>Evt. særlige krav:</p>
+            <p style={{ marginTop: "20px" }}>Evt. særlige krav:</p>
             <p className="popup-txt">{additionalRequirements}</p>
           </>
         )}
@@ -56,43 +74,104 @@ const PopupContent = ({ selectedLesson, activeSection }) => {
   return null;
 };
 
-
-
-const Lessons = ({ selectedLesson, selectedBox, activeSection, handleClosePopup }) => {
+const Lessons = ({
+  selectedLesson,
+  selectedBox,
+  activeSection,
+  handleClosePopup,
+}) => {
   const lectures = [
-    'Tysk',
-    'Spansk',
-    'Engelsk',
-    'Samfundsfag',
-    'Matematik',
-    'Fransk',
-    'Dansk',
-    'Biologi',
-    'Bioteknologi',
-    'Historie',
-    'Dansk som andetsprog',
-    'Natur/Teknologi',
-    'Fysik/Kemi',
-    'Idræt',
-    'Musik',
-    'Billedkunst',
-    'Kristendomskundskab',
-    'Geografi'
+    "Tysk",
+    "Spansk",
+    "Engelsk",
+    "Samfundsfag",
+    "Matematik",
+    "Fransk",
+    "Dansk",
+    "Biologi",
+    "Bioteknologi",
+    "Historie",
+    "Programmering",
+    "Naturgeografi",
+    "Kemi",
+    "Psykologi",
+    "Dansk som andetsprog",
+    "Natur/Teknologi",
+    "Fysik/Kemi",
+    "Fysik",
+    "Religion",
+    "Idræt",
+    "Musik",
+    "Billedkunst",
+    "Kristendomskundskab",
+    "Geografi",
+    "Kost & Motion",
+    "Social Trivsel",
+    "Psykisk Trivsel",
+    "Fysisk Trivsel",
+    "Håndtering af angst",
+    "Digital Dannelse",
+    "Hjælp til venskaber",
+    "Misbrug og afhængighed",
+    "Hjælp til ADHD og ADD",
+    "Støtte til højt begavede",
+    "Søvnudfordringer",
+    "Seksualundervisning",
+    "Uddannelsesvejledning",
+    "Stresshåndtering",
+    "Skolevægring",
+    "Uddannelsesparathed",
   ];
 
-  if (selectedLesson && activeSection === 'section1' && lectures.includes(selectedLesson)) {
+  if (
+    selectedLesson &&
+    activeSection === "section1" &&
+    lectures.includes(selectedLesson)
+  ) {
     return (
       <Popup
-        content={<PopupContent selectedLesson={selectedLesson} activeSection={activeSection} />}
+        content={
+          <PopupContent
+            selectedLesson={selectedLesson}
+            activeSection={activeSection}
+          />
+        }
         onClose={handleClosePopup}
       />
     );
   }
 
-  if (selectedBox && activeSection === 'section2' && lectures.includes(selectedBox)) {
+  if (
+    selectedBox &&
+    activeSection === "section2" &&
+    lectures.includes(selectedBox)
+  ) {
     return (
       <Popup
-        content={<PopupContent selectedLesson={selectedBox} activeSection={activeSection} />}
+        content={
+          <PopupContent
+            selectedLesson={selectedBox}
+            activeSection={activeSection}
+          />
+        }
+        onClose={handleClosePopup}
+      />
+    );
+  }
+
+  if (
+    selectedLesson &&
+    activeSection === "section3" &&
+    lectures.includes(selectedLesson)
+  ) {
+    return (
+      <Popup
+        content={
+          <PopupContent
+            selectedLesson={selectedLesson}
+            activeSection={activeSection}
+          />
+        }
         onClose={handleClosePopup}
       />
     );
