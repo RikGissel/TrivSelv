@@ -29,7 +29,7 @@ function Nav() {
           }`}
         >
           <li><a href="#section-content-wrapper">Booster</a></li>
-          <li>Fag</li>
+          <li><a href="#lessons-container-main">Fag</a></li>
           <li>Om os</li>
           <li className="navbar-contact">
             Kontakt
@@ -43,8 +43,8 @@ function Nav() {
       <div className={`navbar-menu`}>
         <ul>
           <li><a href="#section-content-wrapper">Booster</a></li>
-          <li>Fag</li>
-          <li>Om os</li>
+          <li><a href="#lessons-container-main">Fag</a></li>
+          <li><a href="#content-section-2">Om os</a></li>
           <li className="navbar-contact">
             Kontakt
             <img className="arrow" src={arrowIcon} alt="Arrow" />

@@ -176,6 +176,10 @@ color: #a11091;
     margin: 15px 0;
   }
 
+  .hamburger-mobile-list a {
+    text-decoration: none;
+  }
+
   .navbar-menu.open ul {
     flex-direction: column;
     align-items: flex-start;

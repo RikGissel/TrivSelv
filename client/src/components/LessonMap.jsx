@@ -48,7 +48,7 @@ const ContentSwitcher = () => {
   };
 
   return (
-    <div className="lessons-container">
+    <div className="lessons-container" id="lessons-container-main">
       <div className="lessons-wrapper">
         <h1 className="lessons-heading">Fagområder</h1>
         <h4 className="lessons-subheading">Vi søger Boostere indenfor følgende fagområder</h4>

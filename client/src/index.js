@@ -33,7 +33,7 @@ root.render(
     btnText={"Fagområder"}
   />
 
-  <Content 
+  <Content
     className={"second-content-section"}
     imageSrc={process.env.PUBLIC_URL + '/content-2.jpg'}
     header={"For os er trivsel alt - også din!"}

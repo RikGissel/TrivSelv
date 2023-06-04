@@ -1,4 +1,4 @@
-import logo from '../assets/logo/logo_white.png';
+import logo from '../assets/logo/trivselv_logo_white.svg';
 import '../css/Footer.css';
 
 function Footer() {

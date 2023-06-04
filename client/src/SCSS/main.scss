@@ -12,6 +12,7 @@ html {
 
 .lessons-container {
   padding: 50px 0;
+  scroll-margin-top: 100px;
   @include flex-center-horizontal;
   
   width: 100vw;
