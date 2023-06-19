@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../css/nav.css";
 import logo from "../assets/logo/TrivSelv_logo_navbar.svg";
 import arrowIcon from "../assets/icons/arrow-down.png";
@@ -6,8 +6,26 @@ import hamburger from "../assets/icons/bars-solid.svg";
 
 function Nav() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
 
-  const handleMobileMenuToggle = () => {
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target)
+      ) {
+        setMobileMenuOpen(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [mobileMenuRef]);
+
+  const handleMobileMenuToggle = (event) => {
+    event.stopPropagation(); // Stop event propagation
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
@@ -24,9 +42,9 @@ function Nav() {
           onClick={handleMobileMenuToggle}
         />
         <ul
-          className={`hamburger-mobile-list ${
-            isMobileMenuOpen ? "open" : ""
-          }`}
+          ref={mobileMenuRef}
+          className={`hamburger-mobile-list ${isMobileMenuOpen ? "open" : ""}`}
+          onClick={(event) => event.stopPropagation()} // Stop event propagation on the menu
         >
           <li><a href="#section-content-wrapper">Booster</a></li>
           <li><a href="#lessons-container-main">Fag</a></li>

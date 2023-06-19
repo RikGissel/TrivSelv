@@ -60,6 +60,11 @@
 .navbar-menu ul li a {
   text-decoration: none;
   color: var(--main-purple-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu ul li a:hover {
+  color: #a11091;
 }
 
 

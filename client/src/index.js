@@ -80,7 +80,9 @@ root.render(
     </a>
   }
   secondButtonClass="apply-button"
-/>
+>
+</Content>
+
 
 
   <App />
