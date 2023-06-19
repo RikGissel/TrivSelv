@@ -16,15 +16,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 50px 0;
 }
 
 .image-text-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
-    margin-bottom: 50px;
     width: 85%;
   }
 
@@ -51,8 +49,6 @@ margin-left: 40px;
   
   .content-text-box {
     width: 50%;
-
-    
   }
 
   .content-text-box h3{
@@ -68,7 +64,7 @@ margin-left: 40px;
 
   .content-text-box .content-paragraph-text{
     color: var(--main-text-color);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-family: var(--font-Montserrat);
   }
@@ -98,6 +94,7 @@ margin-left: 40px;
     background-color: var(--main-white-color);
     color: var(--main-pink-color);
     margin-left: 10px;
+    font-family: var(--font-Montserrat);
 }
   
   .content-button:hover{
@@ -121,6 +118,7 @@ margin-left: 40px;
     }
     .content-wrapper {
       flex-direction: column;
+      padding: 0px;
     }
 
     .banner-images {

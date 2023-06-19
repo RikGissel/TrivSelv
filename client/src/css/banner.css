@@ -44,7 +44,7 @@ body {
 }
 
 .banner-with-text {
-  height: 65vh;
+  min-height: 600px;
   background-color: #7B5EC6;
   flex-direction: column;
   text-align: center;
@@ -76,15 +76,15 @@ body {
   font-size: 39px;
   font-weight: 600;
   line-height: 50px;
-  width: 55%;
   margin: auto;
+  width: 72.5%;
 }
 
 .banner-text-author {
   font-family: "Alexandria", sans-serif;
   color: #FFFFFF;
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 200;
   font-style: italic;
   margin-top: 40px;
 }

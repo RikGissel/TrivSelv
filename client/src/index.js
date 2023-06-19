@@ -18,10 +18,14 @@ root.render(
   <Nav />
 
   <Landing 
-    landIMG={process.env.PUBLIC_URL + '/land-img.jpg'}
-    landHeader={"Vil du gøre en meningsfuld forskel for børn & unge?"}
-    landText={"Din indsats vil være med til at skabe forskel og mening for børn & unge, nu og i fremtiden. En forskel, der gør vores arbejde meningsfuldt. Hos TrivSelv bliver du en del af et større fællesskab. Et fællesskab med et fælles mål – trivsel!"}
-    />
+  landIMG={process.env.PUBLIC_URL + '/land-img.jpg'}
+  landHeader={"Vil du gøre en meningsfuld forskel for børn & unge?"}
+  landText={
+    <div className='landing-text-wrapper'>
+      Din indsats vil være med til at skabe forskel og <br /> mening for børn & unge, nu og i fremtiden. En <br />forskel, der gør vores arbejde meningsfuldt. Hos<br /> TrivSelv bliver du en del af et større fællesskab. Et fællesskab med et fælles mål – trivsel!
+    </div>
+  }
+/>
 
   <Content 
     className={"first-content-section"}
@@ -69,6 +73,7 @@ root.render(
   text1={"Bag TrivSelv står Thomas & Mathias, der begge arbejder som folkeskolelærere i Aarhus kommune. Thomas kommer fra en lang karriere som professionel badmintontræner og Mathias fra en karriere i forsvaret. Til dagligt arbejder de både i almen og specialpædagogisk regi samt AKT på Tilst skole."}
   text2={"Vores erfaringer som skolelærere i den danske folkeskole viser, at der eksisterer et stigende behov for opmærksomhed på det enkelte barn & ung. Et behov, der kan være svært at imødekomme i en hektisk hverdag. Vi adskiller os fra andre mentorvirksomheder på vores holistiske syn på trivsel. Hos os møder faglig, personlig og social trivsel hinanden."}
   text3={"Hos TrivSelv har vi en vision om at alle børn får den hjælp og støtte, de har brug for, til at kunne realisere deres fulde potentiale. At alle børn kommer til at opleve en meningsgivende hverdag med skoleglæde, gode kammerater og en følelse af succes."}
+  text4={"Vi har derfor gjort det til vores mission at samle de bedste og dygtigste BOOSTERE til at hjælpe os med at opnå vores vision. Vi ved, at vi i fællesskab kan gøre en uvurderlig forskel for børn & unge. Vi er klar - er du?"}
   btnText={
     <a href="mailto:booster@trivselv.dk" className="content-send-btn">
       Skriv til os

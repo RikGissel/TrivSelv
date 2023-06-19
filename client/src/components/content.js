@@ -4,7 +4,7 @@ import ModalComponent from './ModalComponent';
 
 
 
-const Content = ({ imageSrc, header, text1, text2, text3, className,btnText, secondButtonClass }) => {
+const Content = ({ imageSrc, header, text1, text2, text3, text4, className,btnText, secondButtonClass }) => {
     const containerClassName = `image-text-container ${className}`;
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -27,6 +27,7 @@ const Content = ({ imageSrc, header, text1, text2, text3, className,btnText, sec
             <p className='content-paragraph-text'>{text1}</p>
             <p className='content-paragraph-text'>{text2}</p>
             <p className='content-paragraph-text'>{text3}</p>
+            <p className='content-paragraph-text'>{text4}</p>
             <div className="button-container">
               <button className='content-button'>{btnText}</button>
               {secondButtonClass && (
