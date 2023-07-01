@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 25px;
   background-color: white;
   color: #7B5EC6;
   font-size: 0.9vw;
@@ -100,7 +100,8 @@ color: #a11091;
   border-radius: 10px 10px;
   min-width: 180px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
+  margin-right: 40px;
 }
 
 .contact-dropdown a {
@@ -173,6 +174,7 @@ color: #a11091;
 
   .hamburger-mobile-list img {
     width: 15px;
+    height: 20px;
   }
 
   .hamburger-mobile-list li {
@@ -194,5 +196,8 @@ color: #a11091;
     margin: 10px 0;
   }
 
+  .contact-dropdown {
+    margin-right: 0px;
+  }
 
 }

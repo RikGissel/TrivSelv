@@ -47,7 +47,7 @@ footer hr {
 }
 
 .footer-aps{
-  font-weight: 900;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

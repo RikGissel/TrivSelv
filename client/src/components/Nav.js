@@ -32,7 +32,9 @@ function Nav() {
   return (
     <nav className="navbar" style={{ minHeight: "90px" }}>
       <div className="navbar-logo">
-        <img src={logo} alt="Triv selv logo" />
+        <a href="#top">
+          <img src={logo} alt="Triv selv logo" />
+        </a>
       </div>
       <div className="navbar-toggle">
         <img
