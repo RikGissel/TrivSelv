@@ -4,7 +4,7 @@ import ModalComponent from './ModalComponent';
 
 
 
-const Content = ({ imageSrc, header, text1, text2, text3, text4, className,btnText, secondButtonClass }) => {
+const Content = ({sectionName, imageSrc, header, text1, text2, text3, text4, className,btnText, secondButtonClass }) => {
     const containerClassName = `image-text-container ${className}`;
     const [isModalOpen, setIsModalOpen] = useState(false);
 

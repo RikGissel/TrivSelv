@@ -65,9 +65,9 @@ root.render(
 
     <Banner type="text" text1="”… en vision om at alle børn får den hjælp og støtte, de har brug for, til at kunne realisere deres fulde potentiale”" text2="- TrivSelv" /> 
 
-
+<div id='about'>
     <Content
-  className={"second-content-section"}
+  className={"second-content-section content-about"}
   imageSrc={process.env.PUBLIC_URL + '/content-3.jpg'}
   header={"Om os"}
   text1={"Bag TrivSelv står Thomas & Mathias, der begge arbejder som folkeskolelærere i Aarhus kommune. Thomas kommer fra en lang karriere som professionel badmintontræner og Mathias fra en karriere i forsvaret. Til dagligt arbejder de både i almen og specialpædagogisk regi samt AKT på Tilst skole."}
@@ -82,6 +82,7 @@ root.render(
   secondButtonClass="apply-button"
 >
 </Content>
+</div>
 
 
 
