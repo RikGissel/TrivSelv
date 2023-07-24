@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App';
 
 /* Components */
@@ -7,13 +7,12 @@ import Nav from './components/Nav';
 import Landing from './components/landing';
 import Content from './components/content';
 import Banner from './components/banner';
-import Footer from './components/Footer.js';
-
+import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 import ContentSwitcher from './components/PopupMap';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <Nav />
 
@@ -72,11 +71,10 @@ root.render(
     secondButtonClass="apply-button"
   />
 
-  <App />
   
-  <Footer />
 
     <ContentSwitcher/>
+    <Footer />
   </React.StrictMode>
 );
 
