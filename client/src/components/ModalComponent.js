@@ -12,6 +12,7 @@ const ModalComponent = ({ closeModal }) => {
     studie: '',
     grundskole: [],
     trivsel: [],
+    gymnasie: [],
     billede: null,
     andet: null,
     consent: false,
@@ -136,6 +137,7 @@ const ModalComponent = ({ closeModal }) => {
       formDataToSend.append('studie', formData.studie);
       formDataToSend.append('grundskole', formData.grundskole);
       formDataToSend.append('trivsel', formData.trivsel);
+      formDataToSend.append('gymnasie', formData.gymnasie);
       formDataToSend.append('consent', formData.consent);      
       if (andetFile) {
         formDataToSend.append('andet', andetFile);
@@ -347,6 +349,90 @@ const ModalComponent = ({ closeModal }) => {
   <label>
     <input type="checkbox" name="grundskole" value="Afsætning" checked={formData.grundskole.includes('Afsætning')} onChange={handleCheckboxChange} />
       <span className="labelTxt">Afsætning</span>
+  </label>
+  </div>
+
+  <div className="check-group">
+    <h4>Gymnasie</h4>
+      <label>
+          <input type="checkbox" name="gymnasie" value="Dansk" checked={formData.gymnasie.includes('Dansk')} onChange={handleCheckboxChange}/>
+      <span className="labelTxt">Dansk</span>
+  </label>
+    <label>
+      <input type="checkbox" name="gymnasie" value="Englsk" checked={formData.gymnasie.includes('Englsk')} onChange={handleCheckboxChange}/>
+    <span className="labelTxt">Englsk</span>
+  </label>
+    <label>
+      <input type="checkbox" name="gymnasie" value="Historie" checked={formData.gymnasie.includes('Historie')} onChange={handleCheckboxChange}/>
+    <span className="labelTxt">Historie</span>
+  </label>
+    <label>
+      <input type="checkbox" name="gymnasie" value="Engelsk" checked={formData.gymnasie.includes('Engelsk')} onChange={handleCheckboxChange}/>
+        <span className="labelTxt">Engelsk</span>
+  </label>
+  <label>
+      <input type="checkbox" name="gymnasie" value="Musik" checked={formData.gymnasie.includes('Musik')} onChange={handleCheckboxChange}/>
+        <span className="labelTxt">Musik</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Religion" checked={formData.gymnasie.includes('Religion')} onChange={handleCheckboxChange} />
+      <span className="labelTxt">Religion</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Fransk" checked={formData.gymnasie.includes('Fransk')} onChange={handleCheckboxChange}/>
+      <span className="labelTxt">Fransk</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Spansk" checked={formData.gymnasie.includes('Spansk')} onChange={handleCheckboxChange}/>
+      <span className="labelTxt">Spansk</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Biologi" checked={formData.gymnasie.includes('Biologi')} onChange={handleCheckboxChange}/>
+      <span className="labelTxt">Biologi</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Fysik" checked={formData.gymnasie.includes('Fysik')} onChange={handleCheckboxChange} />
+      <span className="labelTxt">Fysik</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Kemi" checked={formData.gymnasie.includes('Kemi')} onChange={handleCheckboxChange} />
+      <span className="labelTxt">Kemi</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Tysk" checked={formData.gymnasie.includes('Tysk')} onChange={handleCheckboxChange}/>
+      <span className="labelTxt">Tysk</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Biologi" checked={formData.gymnasie.includes('Biologi')} onChange={handleCheckboxChange}/>
+      <span className="labelTxt">Dansk Som Biologi</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Psykologi" checked={formData.gymnasie.includes('Psykologi')} onChange={handleCheckboxChange}/>
+      <span className="labelTxt">Psykologi</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Idræt" checked={formData.gymnasie.includes('Idræt')} onChange={handleCheckboxChange} />
+      <span className="labelTxt">Idræt</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Bioteknologi" checked={formData.gymnasie.includes('Bioteknologi')} onChange={handleCheckboxChange}/>
+      <span className="labelTxt">Bioteknologi</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Geografi" checked={formData.gymnasie.includes('Geografi')} onChange={handleCheckboxChange} />
+      <span className="labelTxt">Geografi</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Naturgeografi" checked={formData.gymnasie.includes('Naturgeografi')} onChange={handleCheckboxChange} />
+      <span className="labelTxt">Naturgeografi</span>
+    </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Programmering" checked={formData.gymnasie.includes('Programmering')} onChange={handleCheckboxChange} />
+      <span className="labelTxt">Programmering</span>
+  </label>
+  <label>
+    <input type="checkbox" name="gymnasie" value="Samfundsfag" checked={formData.gymnasie.includes('Samfundsfag')} onChange={handleCheckboxChange} />
+      <span className="labelTxt">Samfundsfag</span>
   </label>
   </div>
 

@@ -254,7 +254,8 @@ textarea.input-long {
     }
     
     .check-group {
-      width: 50%; 
+      width: 30%;
+      height: 600px; 
     }
 
     .modal-input-container {
